@@ -1,9 +1,13 @@
 import React, {setState} from 'react';
+import Logo from './Logo'
 
 const Navbar = () => {
-    
+    // const [burger, setBurger] = setState({isOpen: false});
     return (
-        <h1>this is navbar</h1>
+        <nav class="navbar">
+
+            <Logo />
+        </nav>
     );
 }
 
