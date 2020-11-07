@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import navbarListItems from './NavbarNavigationItems'
 import Logo from "./Logo";
 
 const Navbar = () => {
@@ -6,28 +7,6 @@ const Navbar = () => {
   const switchBurger = () =>
     setBurger((burger) => ({ isOpen: !burger.isOpen }));
 
-  const listItems = [
-    {
-      title: "صفحه اصلی",
-      href: "#home",
-      active: true,
-    },
-    {
-      title: "درباره ما",
-      href: "#aboutUs",
-      active: false,
-    },
-    {
-      title: "تماس با ما",
-      href: "#contactUs",
-      active: false,
-    },
-    {
-      title: "عضویت داروخانه ها",
-      href: "#registerPharmacy",
-      active: false,
-    },
-  ];
 
   return (
     <nav className="section navbar">
@@ -40,7 +19,7 @@ const Navbar = () => {
         }
       >
         <ul className="navbar__items">
-          {listItems.map((item, index) => {
+          {navbarListItems.map((item, index) => {
             return (
               <li className="navbar__items__li" key={index}>
                 <a
