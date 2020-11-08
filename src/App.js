@@ -1,9 +1,27 @@
-import './App.css';
+import React from 'react';
+import Main from './pages/Main';
+import AboutUs from './pages/AboutUs';
+import ContactUs from './pages/ContactUs';
+import FAQ from './pages/FAQ';
+import RegisterPharmacy from './pages/RegisterPharmacy';
+import TermsAndConditions from './pages/TermsAndConditions';
+import Navbar from './components/Navbar';
+import {Route, Switch} from 'react-router-dom';
 
 function App() {
   return (
-    <h1>app component</h1>
+    <div className="App">
+      <Navbar />
+      <Switch>
+      <Route exact path="/" component={Main}/>
+      <Route exact path="/about-us" component={AboutUs}/>
+      <Route exact path="/contact-us" component={ContactUs}/>
+      <Route exact path="/faq" component={FAQ}/>
+      <Route exact path="/RegisterPharmacy" component={RegisterPharmacy}/>
+      <Route exact path="/TermsAndConditions" component={TermsAndConditions}/>
+    </Switch>
+    </div>
   );
 }
 
-export default App;
+export default App

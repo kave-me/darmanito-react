@@ -1,10 +1,8 @@
-import React from 'react'
-import Navbar from '../components/Navbar'
+import React from 'react';
 
 const TermsAndConditions = () => {
     return (
         <div className="container">
-            <Navbar />
             <h1>TermsAndConditions page</h1>
         </div>
     );
