@@ -1,13 +1,13 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
 
-const RegisterPharmacy = () => {
+const TermsAndConditions = () => {
     return (
         <div className="container">
             <Navbar />
-            <h1>RegisterPharmacy page</h1>
+            <h1>TermsAndConditions page</h1>
         </div>
     );
 }
 
-export default RegisterPharmacy
+export default TermsAndConditions
