@@ -1,7 +1,7 @@
 import NavbarNavigationItems from './NavbarNavigationItems'
 
 const footerPages = [...NavbarNavigationItems];
-const FooterServices = [
+const footerServices = [
     {
         title: "داروخانه آنلاین",
         href: "#online-pharmacy",
@@ -25,5 +25,5 @@ const FooterServices = [
 
 export {
     footerPages,
-    FooterServices
+    footerServices
 }

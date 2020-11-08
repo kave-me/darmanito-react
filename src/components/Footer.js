@@ -1,6 +1,6 @@
 import React from 'react';
 import Logo from './Logo';
-import {footerPages, FooterServices} from './FooterNavigationItems';
+import {footerPages, footerServices} from './FooterNavigationItems';
 
 const Footer = () => {
     return(
@@ -28,7 +28,7 @@ const Footer = () => {
             <div className="footer__pages">
                 <p className="footer__pages__title"><strong>صفحات درمانیتو</strong></p>
                 <ul>
-                {FooterServices.map((item,index) => 
+                {footerServices.map((item,index) => 
                         <li key={index}>{item.title}</li>)}
                 </ul>
             </div>
