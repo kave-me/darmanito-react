@@ -1,9 +1,10 @@
 import React from 'react';
+import TextBanner from '../components/TextBanner'
 
 const ContactUs = () => {
     return (
         <div className="container">
-            <h1>ContactUs page</h1>
+            <TextBanner text="تماس با ما"/>
         </div>
     );
 }

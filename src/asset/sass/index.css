@@ -1,3 +1,23 @@
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+}
+
+.p2 {
+  font-size: 14px;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -201,6 +221,26 @@
   margin: 0;
 }
 
+.TextBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1894ff;
+  color: white;
+  text-align: center;
+  height: 120px;
+}
+
+.TextBanner__text {
+  margin: auto;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -216,6 +256,6 @@ body {
 }
 
 .section {
-  padding: 1% 5% 5% 5%;
+  padding: 1% 5% 1rem 5%;
 }
 /*# sourceMappingURL=index.css.map */
