@@ -1,0 +1,14 @@
+@import '../base/colors';
+
+.TextBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    height: 120px;
+}
+.TextBanner__text {
+    margin: auto;
+}
