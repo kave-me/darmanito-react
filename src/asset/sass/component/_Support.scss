@@ -1,0 +1,53 @@
+.support {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $primary-color;
+    height: 120px;
+}
+.support__text {
+    display: flex;
+    gap: 1rem;
+    direction: rtl;
+    color: white;
+}
+.support__button {
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    align-items: center;
+    justify-content: center;
+    width: 12rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: $tertiary-color;
+    font-family: 'yekan', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+.support__button__text__a {
+    color: white;
+    text-decoration: none;
+    margin-right: .3rem;
+}
+.support__button:focus {
+    outline: none;
+}
+.support__button__img {
+    width: 24px;
+}
+@media screen and (max-width: 700px) {
+    .support__text {
+        flex-direction: column;
+        justify-items: center;
+    }
+    .support {
+        flex-direction: column;
+        text-align: center;
+        height: 150px;
+    }
+    .support__button {
+        margin-top: 1rem;
+    }
+}

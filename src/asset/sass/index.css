@@ -221,7 +221,7 @@ p {
   margin: 0;
 }
 
-.TextBanner {
+.textBanner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -237,8 +237,94 @@ p {
   height: 120px;
 }
 
-.TextBanner__text {
+.textBanner__text {
   margin: auto;
+}
+
+.support {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #1894ff;
+  height: 120px;
+}
+
+.support__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+  direction: rtl;
+  color: white;
+}
+
+.support__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  direction: rtl;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 12rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  border: none;
+  background-color: #2361B5;
+  font-family: 'yekan', Tahoma, 'Segoe UI', Geneva, Verdana, sans-serif;
+  cursor: pointer;
+}
+
+.support__button__text__a {
+  color: white;
+  text-decoration: none;
+  margin-right: .3rem;
+}
+
+.support__button:focus {
+  outline: none;
+}
+
+.support__button__img {
+  width: 24px;
+}
+
+@media screen and (max-width: 700px) {
+  .support__text {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-items: center;
+  }
+  .support {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    height: 150px;
+  }
+  .support__button {
+    margin-top: 1rem;
+  }
 }
 
 * {
