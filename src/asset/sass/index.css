@@ -597,6 +597,36 @@ p {
   border-radius: 10px;
 }
 
+.FaqIconContainer {
+  -webkit-box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
+          box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
+  width: 120px;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+
+.FaqIconContainer__img {
+  width: 40px;
+  margin-bottom: 5px;
+}
+
+.FaqIconContainer__text {
+  color: #2361B5;
+}
+
 * {
   padding: 0;
   margin: 0;

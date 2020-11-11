@@ -1,0 +1,19 @@
+.FaqIconContainer {
+    box-shadow: 0 0 20px rgba($primary-color, .2);
+    width: 120px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    
+}
+.FaqIconContainer__img {
+    width: 40px;
+    margin-bottom: 5px;
+}
+.FaqIconContainer__text {
+    color: $tertiary-color;
+
+}
