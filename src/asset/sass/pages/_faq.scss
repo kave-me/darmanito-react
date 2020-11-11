@@ -1,0 +1,11 @@
+.faqPageMainSection {
+
+    &__title {
+            color: $tertiary-color;
+            border-right: 4px solid $secondary-color;
+            direction: rtl;
+            padding-right: 1rem;
+        }
+}
+
+

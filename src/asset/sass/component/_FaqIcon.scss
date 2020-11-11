@@ -7,6 +7,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    filter: grayscale(100);
     
     &__img {
         width: 40px;
@@ -14,5 +15,8 @@
     }
     &__text {
         color: $tertiary-color;
+    }
+    &__active {
+        filter: grayscale(0);
     }
 }

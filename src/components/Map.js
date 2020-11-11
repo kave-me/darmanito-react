@@ -13,7 +13,9 @@ function SimpleMap() {
         center: [35.699739, 51.338097],
         zoom: 13
     }}
+    className={"testClass"}
     style= {{
+
       width: '600px',
       height: '480px',
       margin: 0,

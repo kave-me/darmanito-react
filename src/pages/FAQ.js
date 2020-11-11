@@ -2,8 +2,8 @@ import React from 'react';
 import TextBanner from '../components/TextBanner';
 import Footer from '../components/Footer';
 import Support from '../components/Support';
-import FaqIcon from '../components/FaqIcon';
-import markerIcon from '../asset/image/market.svg';
+import FaqIconList from '../components/FaqIconList';
+
 
 const faqItems = [
     {}]
@@ -13,15 +13,11 @@ const FAQ = () => {
         <div className="container">
             <TextBanner
             text="سوالات متداول"/>
-
             <div className="faqPageMainSection section">
-                <FaqIcon
-                img={markerIcon}
-                text="متن"
-                />
+                <h3 className="faqPageMainSection__title">سوال شما درباره کدام سرویس است؟</h3>
+                <FaqIconList/>
             </div>
 
-            <h1>FAQ page</h1>
             <Support/>
             <Footer/>
         </div>

@@ -597,6 +597,13 @@ p {
   border-radius: 10px;
 }
 
+.faqPageMainSection__title {
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  direction: rtl;
+  padding-right: 1rem;
+}
+
 .FaqIconContainer {
   -webkit-box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
           box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
@@ -616,6 +623,8 @@ p {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px;
+  -webkit-filter: grayscale(100);
+          filter: grayscale(100);
 }
 
 .FaqIconContainer__img {
@@ -625,6 +634,20 @@ p {
 
 .FaqIconContainer__text {
   color: #2361B5;
+}
+
+.FaqIconContainer__active {
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
+}
+
+.FaqIconListContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
 }
 
 * {
