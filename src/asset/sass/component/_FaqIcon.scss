@@ -8,12 +8,11 @@
     align-items: center;
     border-radius: 10px;
     
-}
-.FaqIconContainer__img {
-    width: 40px;
-    margin-bottom: 5px;
-}
-.FaqIconContainer__text {
-    color: $tertiary-color;
-
+    &__img {
+        width: 40px;
+        margin-bottom: 5px;
+    }
+    &__text {
+        color: $tertiary-color;
+    }
 }

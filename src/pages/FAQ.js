@@ -5,6 +5,9 @@ import Support from '../components/Support';
 import FaqIcon from '../components/FaqIcon';
 import markerIcon from '../asset/image/market.svg';
 
+const faqItems = [
+    {}]
+
 const FAQ = () => {
     return (
         <div className="container">
