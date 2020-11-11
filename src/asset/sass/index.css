@@ -623,6 +623,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px;
+  cursor: pointer;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
 }

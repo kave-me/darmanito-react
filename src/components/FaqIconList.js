@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import FaqIcon from '../components/FaqIcon';
-import markerIcon from '../asset/image/market.svg';
+import marketIcon from '../asset/image/market.svg';
 import pharmacyIcon from '../asset/image/pharmacy.svg';
 import scheduleIcon from '../asset/image/schedule.svg';
 import stethoscopeIcon from '../asset/image/stethoscope.svg';
@@ -9,41 +9,50 @@ import stethoscopeIcon from '../asset/image/stethoscope.svg';
 const FaqIconList = () => {
     const [iconsStat, setIconsState] = useState(
         [{
-            img: markerIcon,
+            img: marketIcon,
             text: "فروشگاه",
-            isActive: true
+            isActive: true,
+            id: 1
         }, {
             img: pharmacyIcon,
             text: "داروخانه",
-            isActive: false
+            isActive: false,
+            id: 2
         }, {
             img: scheduleIcon,
             text: "نوبت دهی آنلاین",
-            isActive: false
+            isActive: false,
+            id: 3
         }, {
             img: stethoscopeIcon,
             text: "ویزیت آنلاین",
-            isActive: false
+            isActive: false,
+            id: 4
         }]);
 
-    const switchActiveIcon = (index) => {
-        for (const [i, v] of iconsStat.entries()){
-            if (i === index) {
-                iconsStat.isActive=true;
+    const activateIcon = (id) => {
+        const newStat = [];
+        for (const icon of iconsStat) {
+            if (icon.id === id) {
+                icon.isActive = true;
+                newStat.push(icon)
+
+            } else {
+                icon.isActive = false;
+                newStat.push(icon)
             }
-            iconsStat.isActive=false;
         }
-        setIconsState(iconsStat);
+        setIconsState(newStat);
     }
     return(
         <div className="FaqIconListContainer">
-           { iconsStat.map((item, index) => {
+           { iconsStat.map((item) => {
                 return(<FaqIcon
                     img={item.img}
                     text={item.text}
                     active={item.isActive}
-                    key={index}
-                    onClick={switchActiveIcon}
+                    key={item.id}
+                    click={()=>activateIcon(item.id)}
                 />);
             })}
         </div>
