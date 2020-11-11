@@ -536,6 +536,67 @@ p {
   cursor: pointer;
 }
 
+.messageForm {
+  -webkit-box-flex: .5;
+      -ms-flex: .5;
+          flex: .5;
+}
+
+.messageForm__form__input {
+  height: 45px;
+  border-radius: 10px;
+  border: 2px solid #f2f2f2;
+}
+
+.messageForm__form__input:focus {
+  border: 2px solid #1894ff;
+  outline: none;
+}
+
+.messageForm__form__textarea {
+  border-radius: 10px;
+  border: 2px solid #f2f2f2;
+}
+
+.messageForm__form__textarea:focus {
+  border: 2px solid #1894ff;
+  outline: none;
+}
+
+.messageForm__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  direction: rtl;
+  gap: 1rem;
+}
+
+.contactUsFormAndMap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.messageForm__form__button {
+  margin-top: 1rem;
+  height: 45px;
+  background-color: white;
+  border: 2px solid #1894ff;
+  border-radius: 10px;
+}
+
 * {
   padding: 0;
   margin: 0;
