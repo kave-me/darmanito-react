@@ -8,6 +8,7 @@
     align-items: center;
     border-radius: 10px;
     cursor: pointer;
+    opacity: 60%;
     filter: grayscale(100);
     
     &__img {
@@ -18,6 +19,7 @@
         color: $tertiary-color;
     }
     &__active {
+        opacity: 100%;
         filter: grayscale(0);
     }
 }

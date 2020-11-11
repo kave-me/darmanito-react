@@ -36,7 +36,6 @@ const FaqIconList = () => {
             if (icon.id === id) {
                 icon.isActive = true;
                 newStat.push(icon)
-
             } else {
                 icon.isActive = false;
                 newStat.push(icon)

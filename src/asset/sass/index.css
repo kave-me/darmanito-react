@@ -602,6 +602,7 @@ p {
   border-right: 4px solid #00DE9A;
   direction: rtl;
   padding-right: 1rem;
+  margin-bottom: 3rem;
 }
 
 .FaqIconContainer {
@@ -624,6 +625,7 @@ p {
           align-items: center;
   border-radius: 10px;
   cursor: pointer;
+  opacity: 60%;
   -webkit-filter: grayscale(100);
           filter: grayscale(100);
 }
@@ -638,6 +640,7 @@ p {
 }
 
 .FaqIconContainer__active {
+  opacity: 100%;
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
 }
