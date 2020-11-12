@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import shortid from 'shortid';
 import FaqIcon from '../components/FaqIcon';
 import marketIcon from '../asset/image/market.svg';
 import pharmacyIcon from '../asset/image/pharmacy.svg';
@@ -50,7 +51,7 @@ const FaqIconList = () => {
                     img={item.img}
                     text={item.text}
                     active={item.isActive}
-                    key={item.id}
+                    key={shortid.generate()}
                     click={()=>activateIcon(item.id)}
                 />);
             })}
