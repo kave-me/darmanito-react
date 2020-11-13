@@ -1,0 +1,13 @@
+.TermAndConditionsList {
+    &__icon {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        gap: 1rem;
+        margin: 3rem 0;
+    }
+    &__description {
+        direction: rtl;
+        margin-bottom: 2rem;
+    }
+}
