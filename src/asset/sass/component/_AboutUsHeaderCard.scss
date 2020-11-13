@@ -1,0 +1,45 @@
+.AboutUsHeaderCard {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    direction: rtl;
+    box-shadow: 0 0 20px rgba($primary-color, .2);
+    width: 400px;
+    height: 100px;
+    margin: 1rem;
+    border-radius: 10px;
+    padding: 1rem;
+    &__profile {
+        width: 50px;
+        height: 50px;
+        padding: 10px;
+        background-color: $primary-color;
+        border-radius: 50%;
+    }
+    &__name {
+        font-weight: bold;
+        padding-right: 1rem;
+    }
+    &__address {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        padding-right: .5rem;
+        &__text {
+            color: $dark-color;
+        }
+        &__icon {
+            width: 10px;
+            height: auto;
+        }
+    }
+    &__boarding {
+        font-size: 12px;
+        background-color: $primary-color;
+        border-radius: 5px;
+        color: white;
+        padding: 0 5px;
+        align-self: flex-start;
+    }
+
+}

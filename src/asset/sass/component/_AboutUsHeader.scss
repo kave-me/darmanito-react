@@ -1,0 +1,49 @@
+.aboutUs {
+    &__header {
+        display: flex;
+        flex-direction: row-reverse;
+        column-gap: 2rem;
+        &__textAndInput {
+            direction: rtl;
+            &__input {
+                background-color: whitesmoke;
+                width: 400px;
+                height: 3.5rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 10px;
+                &__input {
+                    background-color: whitesmoke;
+                    border: none;
+                    width: 250px;
+                    height: 3rem;
+                }
+                &__input:focus {
+                    outline: none;
+                }
+                &__button {
+                    background-color: $primary-color;
+                    color: white;
+                    width: 80px;
+                    height: 2.5rem;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                }
+                &__button:focus {
+                    outline: none;
+                }
+            }
+            &__title {
+                color: $primary-color;
+                margin: 2rem 0;
+            }
+            &__description {
+                color: $dark-color;
+                margin: 1rem 0;
+            }
+        }
+
+    }
+}
