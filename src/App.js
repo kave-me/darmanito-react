@@ -4,7 +4,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import RegisterPharmacy from './pages/RegisterPharmacy';
-import TermsAndConditions from './pages/TermsAndConditions';
+import TermAndConditions from './pages/TermAndConditions';
 import Navbar from './components/Navbar';
 import {Route, Switch} from 'react-router-dom';
 
@@ -18,7 +18,7 @@ function App() {
       <Route exact path="/contact-us" component={ContactUs}/>
       <Route exact path="/faq" component={FAQ}/>
       <Route exact path="/RegisterPharmacy" component={RegisterPharmacy}/>
-      <Route exact path="/TermsAndConditions" component={TermsAndConditions}/>
+      <Route exact path="/TermAndConditions" component={TermAndConditions}/>
     </Switch>
     </div>
   );
