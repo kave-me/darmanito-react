@@ -12,9 +12,10 @@
     &__profile {
         width: 50px;
         height: 50px;
-        padding: 10px;
+        padding: 5px;
         background-color: $primary-color;
         border-radius: 50%;
+        color: white;
     }
     &__name {
         font-weight: bold;
@@ -23,14 +24,15 @@
     &__address {
         display: flex;
         flex-direction: row;
-        gap: 5px;
-        padding-right: .5rem;
+        // padding-right: .5rem;
         &__text {
             color: $dark-color;
         }
         &__icon {
-            width: 10px;
+            margin-left: 5px;
+            width: 13px;
             height: auto;
+            color: $secondary-color;
         }
     }
     &__boarding {

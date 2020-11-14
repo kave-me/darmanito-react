@@ -759,17 +759,27 @@ p {
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-column-gap: 2rem;
           column-gap: 2rem;
 }
 
 .aboutUs__header__textAndInput {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   direction: rtl;
+  width: 40%;
 }
 
 .aboutUs__header__textAndInput__input {
   background-color: whitesmoke;
-  width: 400px;
+  width: 500px;
   height: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -780,6 +790,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px;
+  margin-left: auto;
 }
 
 .aboutUs__header__textAndInput__input__input {
@@ -814,7 +825,7 @@ p {
 
 .aboutUs__header__textAndInput__description {
   color: #666666;
-  margin: 1rem 0;
+  margin: 0 0 auto 0;
 }
 
 .AboutUsHeaderCard {
@@ -841,9 +852,10 @@ p {
 .AboutUsHeaderCard__profile {
   width: 50px;
   height: 50px;
-  padding: 10px;
+  padding: 5px;
   background-color: #1894ff;
   border-radius: 50%;
+  color: white;
 }
 
 .AboutUsHeaderCard__name {
@@ -859,8 +871,6 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 5px;
-  padding-right: .5rem;
 }
 
 .AboutUsHeaderCard__address__text {
@@ -868,8 +878,10 @@ p {
 }
 
 .AboutUsHeaderCard__address__icon {
-  width: 10px;
+  margin-left: 5px;
+  width: 13px;
   height: auto;
+  color: #00DE9A;
 }
 
 .AboutUsHeaderCard__boarding {
