@@ -1,5 +1,22 @@
-.aboutUs {
-    &__statics {
+.aboutUsStatics {
+    height: 130px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    direction: rtl;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__title {
 
+        }
+        &__number {
+            direction: ltr;
+            font-size: 36px;
+        }
     }
 }
