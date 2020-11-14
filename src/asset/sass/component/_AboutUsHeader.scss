@@ -1,0 +1,56 @@
+.aboutUs {
+    &__header {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+        column-gap: 2rem;
+        margin-top: 3rem;
+        margin-bottom: 7rem;
+        &__textAndInput {
+            display: flex;
+            flex-direction: column;
+            direction: rtl;
+            width: 40%;
+            &__input {
+                background-color: whitesmoke;
+                width: 500px;
+                height: 3.5rem;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                border-radius: 10px;
+                margin-left: auto;
+                &__input {
+                    background-color: whitesmoke;
+                    border: none;
+                    width: 250px;
+                    height: 3rem;
+                }
+                &__input:focus {
+                    outline: none;
+                }
+                &__button {
+                    background-color: $primary-color;
+                    color: white;
+                    width: 80px;
+                    height: 2.5rem;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                }
+                &__button:focus {
+                    outline: none;
+                }
+            }
+            &__title {
+                color: $primary-color;
+                margin: 2rem 0;
+            }
+            &__description {
+                color: $dark-color;
+                margin: 0 0 auto 0;
+            }
+        }
+
+    }
+}
