@@ -1,5 +1,58 @@
-.aboutUs {
-    &__services {
-
+.aboutUsServices {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    &__title {
+        direction: rtl;
+        color: $tertiary-color;
+        border-right: 5px solid $secondary-color;
+        padding-right: 2rem;
+    }
+    &__description {
+        direction: rtl;
+        margin: 1rem 0 3rem 0;
+    }
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        gap: 3rem;
+        &__card {
+            width: 400px;
+            height: 450px;
+            box-shadow: 0 0 20px rgba($primary-color, .2);
+            border-radius: 20px;
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            &__img {
+                display: flex;
+                justify-content: center;
+                margin: 1rem auto;
+                width: 150px;
+                height: 150px;
+            }
+            &__title {
+                color: $tertiary-color;
+                direction: rtl;
+            }
+            &__description {
+                direction: rtl;
+            }
+            &__button {
+                width: 12rem;
+                height: 3rem;
+                background-color: $primary-color;
+                color: white;
+                font-weight: bold;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                align-self: center;
+                margin-top: auto;
+            }
+            &__button:focus {
+                outline: none;
+            }
+        }
     }
 }
