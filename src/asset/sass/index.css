@@ -1016,6 +1016,63 @@ p {
   outline: none;
 }
 
+.mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.mainHeader__textAndButtons__title {
+  color: #1894ff;
+}
+
+.mainHeader__textAndButtons__description {
+  color: #666666;
+}
+
+.mainHeader__textAndButtons__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainHeader__textAndButtons__buttons__download {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 150px;
+  height: 3rem;
+  background-color: #1894ff;
+  border: 2px solid #1894ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4rem 1rem 0 1rem;
+}
+
+.mainHeader__textAndButtons__buttons__register {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 150px;
+  height: 3rem;
+  background-color: white;
+  border: 2px solid #1894ff;
+  color: #1894ff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4rem 1rem 0 1rem;
+}
+
+.mainHeader__image {
+  width: 400px;
+}
+
 * {
   padding: 0;
   margin: 0;

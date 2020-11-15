@@ -1,10 +1,12 @@
 import React from 'react';
+import MainHeader from '../components/MainHeader';
 
 const Main = () => {
     return (
-        <div className="container">
-
+        <div className="mainContainer container">
+            <MainHeader/>
             <h1>Main page</h1>
+            
         </div>
     );
 }
