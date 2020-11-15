@@ -1073,6 +1073,100 @@ p {
   width: 400px;
 }
 
+.mainAboutContainer {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+.mainAbout {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 1fr;
+      grid-template-columns: 3fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: "mainAbout-iconAndText mainAbout-image";
+  gap: 3rem;
+}
+
+.mainAbout__text {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: mainAbout-iconAndText;
+}
+
+.mainAbout__text__title {
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.mainAbout__image {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: mainAbout-image;
+}
+
+.mainAbout__iconsAndText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  direction: rtl;
+}
+
+.mainAbout__icons {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: mainAbout-iconAndText;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 10%;
+}
+
+.mainAbout__icons__icon {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainAbout__icons__icon__image {
+  width: 80px;
+  height: 80px;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0 0 10px rgba(24, 148, 255, 0.3);
+          box-shadow: 0 0 10px rgba(24, 148, 255, 0.3);
+}
+
+.mainAbout__icons__icon__text {
+  font-size: 14px;
+}
+
 * {
   padding: 0;
   margin: 0;
