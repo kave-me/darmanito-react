@@ -1372,6 +1372,7 @@ p {
 .mainDownloadContainer {
   background-color: #1894ff;
   padding: 1% 5% 0 5%;
+  margin: 4rem 0;
 }
 
 .mainDownload {
@@ -1458,6 +1459,97 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 1rem;
+}
+
+.mainRegisterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 5% 1% 5%;
+  margin: 4rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainRegister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  height: 400px;
+  -webkit-box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
+          box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
+  border-radius: 20px;
+}
+
+.mainRegister__img {
+  width: auto;
+  height: 350px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mainRegister__info {
+  direction: rtl;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainRegister__info__title {
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.mainRegister__info__description {
+  margin-bottom: 3rem;
+}
+
+.mainRegister__info__input {
+  background-color: whitesmoke;
+  width: 500px;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainRegister__info__input__input {
+  width: 300px;
+  height: 2.5rem;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.mainRegister__info__input__input:focus {
+  outline: none;
+}
+
+.mainRegister__info__input__button {
+  width: 6rem;
+  height: 2.8rem;
+  background-color: #1894ff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.mainRegister__info__input__button:focus {
+  outline: none;
 }
 
 * {

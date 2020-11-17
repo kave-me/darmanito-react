@@ -1,67 +1,66 @@
-.mainDownloadContainer {
-    background-color: $primary-color;
-    padding: 1% 5% 0 5%;
-    margin: 4rem 0;
+.mainRegisterContainer {
+display: flex;
+padding: 1% 5% 1% 5%;
+margin: 4rem 0;
+justify-content: center;
 }
-.mainDownload {
+.mainRegister {
     display: flex;
     justify-content: space-around;
-    direction: rtl;
+    width: 95%;
+    height: 400px;
+    box-shadow: 0 0 20px rgba($primary-color, .2);
+    border-radius: 20px;
     &__img {
         width: auto;
-        height: 400px;
+        height: 350px;
         align-self: flex-end;
     }
     &__info {
+        direction: rtl;
         align-self: center;
-        
         &__title {
-            color: white;
+            color: $tertiary-color;
+            border-right: 4px solid $secondary-color;
+            padding-right: 2rem;
+            margin-bottom: 3rem;
         }
         &__description {
-            color: white;
-            margin: 1rem 0 2rem 0;
+            margin-bottom: 3rem;
         }
         &__input {
             background-color: whitesmoke;
-            width: 450px;
-            height: 3rem;
+            width: 500px;
+            height: 3.5rem;
             border-radius: 10px;
+            border: none;
             display: flex;
             justify-content: space-around;
-            flex-direction: row-reverse;
             align-items: center;
-            margin: 1rem 0 2rem 0;
             &__input {
                 width: 300px;
                 height: 2.5rem;
-                border: none;
                 background-color: whitesmoke;
+                border: none;
             }
             &__input:focus {
-                outline: none
+                outline: none;
             }
             &__button {
                 width: 6rem;
-                height: 2.5rem;
+                height: 2.8rem;
                 background-color: $primary-color;
                 color: white;
                 font-size: 1rem;
-                border-radius: 10px;
-                border: none;
                 cursor: pointer;
-                
+                border: none;
+                border-radius: 10px;
             }
             &__button:focus {
-                outline:none;
+                outline: none;
             }
+
         }
-
     }
-    &__icons {
-        display: flex;
-        justify-content: space-around;
-        gap: 1rem;
 
-    }
 }

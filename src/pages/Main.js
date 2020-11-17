@@ -3,6 +3,7 @@ import MainHeader from '../components/MainHeader';
 import MainAbout from '../components/MainAbout';
 import MainFeatures from '../components/MainFeatures';
 import MainDownload from '../components/MainDownload';
+import MainRegister from '../components/MainRegister';
 import Support from '../components/Support';
 import Footer from '../components/Footer';
 
@@ -13,7 +14,7 @@ const Main = () => {
             <MainAbout/>
             <MainFeatures/>
             <MainDownload/>
-            <h1>Main page</h1>
+            <MainRegister/>
             <Support/>
             <Footer/>
         </div>
