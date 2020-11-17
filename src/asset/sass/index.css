@@ -536,6 +536,33 @@ p {
   cursor: pointer;
 }
 
+.androidButtonContainer {
+  text-decoration: none;
+}
+
+.androidButton {
+  width: 170px;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.androidButton:focus {
+  border: none;
+  outline: none;
+}
+
 .messageForm {
   -webkit-box-flex: .5;
       -ms-flex: .5;
@@ -1340,6 +1367,97 @@ p {
 .mainFeaturesIcon__active {
   -webkit-filter: grayscale(0);
           filter: grayscale(0);
+}
+
+.mainDownloadContainer {
+  background-color: #1894ff;
+  padding: 1% 5% 0 5%;
+}
+
+.mainDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  direction: rtl;
+}
+
+.mainDownload__img {
+  width: auto;
+  height: 400px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mainDownload__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainDownload__info__title {
+  color: white;
+}
+
+.mainDownload__info__description {
+  color: white;
+  margin: 1rem 0 2rem 0;
+}
+
+.mainDownload__info__input {
+  background-color: whitesmoke;
+  width: 450px;
+  height: 3rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.mainDownload__info__input__input {
+  width: 300px;
+  height: 2.5rem;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.mainDownload__info__input__input:focus {
+  outline: none;
+}
+
+.mainDownload__info__input__button {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #1894ff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.mainDownload__info__input__button:focus {
+  outline: none;
+}
+
+.mainDownload__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
 }
 
 * {
