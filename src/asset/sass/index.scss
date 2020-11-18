@@ -6,6 +6,7 @@
 @import './component/Footer';
 @import './component/BazarLogoButton';
 @import './component/SibAppLogoButton';
+@import './component/AndroidLogoButton';
 @import './pages/contactUs';
 @import './pages/faq';
 @import './component/FaqIcon';
@@ -18,6 +19,12 @@
 @import './component/AboutUsHeaderCard';
 @import './component/AboutUsStatics';
 @import './component/AboutUsServices';
+@import './component/MainHeader';
+@import './component/MainAbout';
+@import './component/MainFeatures';
+@import './component/MainFeaturesIcon';
+@import './component/MainDownload';
+@import './component/MainRegister';
 
 * {
   padding: 0;

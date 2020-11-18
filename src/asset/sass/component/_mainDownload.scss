@@ -1,0 +1,67 @@
+.mainDownloadContainer {
+    background-color: $primary-color;
+    padding: 1% 5% 0 5%;
+    margin: 4rem 0;
+}
+.mainDownload {
+    display: flex;
+    justify-content: space-around;
+    direction: rtl;
+    &__img {
+        width: auto;
+        height: 400px;
+        align-self: flex-end;
+    }
+    &__info {
+        align-self: center;
+        
+        &__title {
+            color: white;
+        }
+        &__description {
+            color: white;
+            margin: 1rem 0 2rem 0;
+        }
+        &__input {
+            background-color: whitesmoke;
+            width: 450px;
+            height: 3rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: row-reverse;
+            align-items: center;
+            margin: 1rem 0 2rem 0;
+            &__input {
+                width: 300px;
+                height: 2.5rem;
+                border: none;
+                background-color: whitesmoke;
+            }
+            &__input:focus {
+                outline: none
+            }
+            &__button {
+                width: 6rem;
+                height: 2.5rem;
+                background-color: $primary-color;
+                color: white;
+                font-size: 1rem;
+                border-radius: 10px;
+                border: none;
+                cursor: pointer;
+                
+            }
+            &__button:focus {
+                outline:none;
+            }
+        }
+
+    }
+    &__icons {
+        display: flex;
+        justify-content: space-around;
+        gap: 1rem;
+
+    }
+}
