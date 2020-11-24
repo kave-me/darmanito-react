@@ -1552,6 +1552,646 @@ p {
   outline: none;
 }
 
+.RegisterPharmacyFirstFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.RegisterPharmacyFirstFormContainer__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  direction: rtl;
+  width: 75%;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullName {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullName__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullName__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullName__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__medicId {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__medicId__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__medicId__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__medicId__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placeName {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placeName__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placeName__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placeName__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placePhone {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placePhone__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placePhone__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__placePhone__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__city {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__city__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__city__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__city__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__district {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__district__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__district__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__district__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullAddress {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullAddress__label {
+  font-size: 14px;
+  margin-right: 1rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullAddress__input {
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__fullAddress__input:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__timeSection {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.RegisterPharmacyFirstFormContainer__form__boarding {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.RegisterPharmacyFirstFormContainer__form__boarding__select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyFirstFormContainer__form__boarding__true {
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 14px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__boarding__true-active {
+  border: 1px solid #1894ff;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 14px;
+  color: #1894ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegisterPharmacyFirstFormContainer__form__boarding__false {
+  border: 1px solid #a7a7a7;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 14px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: .5rem;
+}
+
+.RegisterPharmacyFirstFormContainer__form__boarding__false-active {
+  border: 1px solid #1894ff;
+  height: 2.5rem;
+  width: 6rem;
+  font-size: 14px;
+  color: #1894ff;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegisterPharmacyFirstFormContainer__form__workTimeRange {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput, .RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput {
+  width: 200px;
+  height: 2.5rem;
+  margin: 0px 1rem;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+}
+
+.RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput:focus, .RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput:focus {
+  border: 1px solid #1894ff;
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacyFirstFormContainer__form__nextButton {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyFirstFormContainer__form__nextButton__button {
+  width: 10rem;
+  height: 2.5rem;
+  color: white;
+  background-color: #1894ff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #1894ff;
+  margin: 0px .2rem;
+  font-weight: bold;
+}
+
+.RegisterPharmacyFirstFormContainer__form__nextButton__button:focus {
+  outline: none;
+}
+
+.RegisterPharmacyFirstFormContainer__form__uploadButton {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyFirstFormContainer__form__uploadButton__button {
+  width: 10rem;
+  height: 2.5rem;
+  color: #1894ff;
+  background-color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #1894ff;
+  margin: 0px .2rem;
+  font-weight: bold;
+}
+
+.RegisterPharmacyFirstFormContainer__form__uploadButton__button:focus {
+  outline: none;
+}
+
+.RegisterPharmacySecondFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacySecondFormContainer__cards {
+  width: 50%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E6F3FF;
+}
+
+.RegisterPharmacySecondFormContainer__form {
+  width: 50%;
+  height: 80vh;
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.RegisterPharmacySecondFormContainer__form__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.RegisterPharmacySecondFormContainer__form__city {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacySecondFormContainer__form__city__select {
+  height: 2.5rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  font-size: 1rem;
+}
+
+.RegisterPharmacySecondFormContainer__form__city__select:focus {
+  outline: none;
+}
+
+.RegisterPharmacySecondFormContainer__form__district {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0;
+}
+
+.RegisterPharmacySecondFormContainer__form__district__select {
+  height: 2.5rem;
+  width: 60%;
+  border-radius: 10px;
+  border: 1px solid #a7a7a7;
+  font-size: 1rem;
+}
+
+.RegisterPharmacySecondFormContainer__form__district__select:focus {
+  outline: none;
+}
+
+.RegisterPharmacySecondFormContainer__form__button {
+  width: 10rem;
+  height: 2.5rem;
+  color: white;
+  background-color: #1894ff;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #1894ff;
+  margin: auto .2rem 2rem .2rem;
+  font-weight: bold;
+}
+
+.RegisterPharmacySecondFormContainer__form__button:focus {
+  outline: none;
+}
+
+.progressBarContainer {
+  width: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  direction: ltr;
+}
+
+.progressBarContainer__label {
+  direction: rtl;
+  font-size: 14px;
+}
+
+.progressBarContainer__progress {
+  background-color: #00DE9A;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.progressBarContainer__background {
+  background-color: #d6d6d6;
+  width: 100%;
+  height: 10px;
+  border-radius: 5px;
+}
+
+.RegisterPharmacyThirdFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyThirdFormContainer__cards {
+  width: 50%;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #E6F3FF;
+}
+
+.RegisterPharmacyThirdFormContainer__preview {
+  width: 50%;
+  direction: rtl;
+}
+
+.RegisterPharmacyThirdFormContainer__preview-row1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
+.RegisterPharmacyThirdFormContainer__preview-row2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
+.RegisterPharmacyThirdFormContainer__preview-row3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
+.RegisterPharmacyThirdFormContainer__preview-row4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 2rem;
+}
+
 * {
   padding: 0;
   margin: 0;

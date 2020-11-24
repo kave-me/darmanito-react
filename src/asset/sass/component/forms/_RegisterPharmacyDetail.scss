@@ -1,0 +1,70 @@
+.RegisterPharmacySecondFormContainer {
+    display: flex;
+    &__cards {
+        width: 50%;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: $background-color;
+    }
+    &__form {
+        width: 50%;
+        height: 80vh;
+        direction: rtl;
+        display: flex;
+        flex-direction: column;
+        &__head {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+        &__city {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            &__select {
+                height: 2.5rem;
+                width: 60%;
+                border-radius: 10px;
+                border: 1px solid rgb(167, 167, 167);
+                font-size: 1rem;
+            }
+            &__select:focus {
+                outline: none;
+            }
+        }
+        &__district {
+            display: flex;
+            flex-direction: column;
+            margin: 1rem 0;
+            &__select {
+                height: 2.5rem;
+                width: 60%;
+                border-radius: 10px;
+                border: 1px solid rgb(167, 167, 167);
+                font-size: 1rem;
+            }
+            &__select:focus {
+                outline: none;
+            }
+        }
+        &__button {
+            width: 10rem;
+            height: 2.5rem;
+            color: white;
+            background-color: $primary-color;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            border-radius: 10px;
+            border: 2px solid $primary-color;
+            margin: auto .2rem 2rem .2rem;
+            font-weight: bold;
+        }
+        &__button:focus {
+            outline: none;
+        }
+    }
+}

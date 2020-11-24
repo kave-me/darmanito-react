@@ -1,9 +1,12 @@
 import React from 'react';
+import RegisterPharmacyForm from '../components/RegisterPharmacyForm';
 
 const RegisterPharmacy = () => {
     return (
-        <div className="container">
-            <h1>RegisterPharmacy page</h1>
+        <div className="RegisterPharmacyContainer">
+            <div className="RegisterPharmacy section">
+            <RegisterPharmacyForm/>
+            </div>
         </div>
     );
 }
