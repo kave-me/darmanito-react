@@ -1,22 +1,22 @@
   const NavbarNavigationItems = [
     {
       title: "صفحه اصلی",
-      href: "#home",
+      href: "/",
       active: true,
     },
     {
       title: "درباره ما",
-      href: "#aboutUs",
+      href: "/about-us",
       active: false,
     },
     {
       title: "تماس با ما",
-      href: "#contactUs",
+      href: "/contact-us",
       active: false,
     },
     {
       title: "عضویت داروخانه ها",
-      href: "#registerPharmacy",
+      href: "/registerPharmacy",
       active: false,
     },
   ];

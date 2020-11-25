@@ -23,7 +23,7 @@ const Footer = () => {
                 <p className="footer__services__title"><strong>خدمات درمانیتو</strong></p>
                 <ul className="footer__services__items">
                     {footerPages.map((item,index) => 
-                        <li className="footer__services__items__item p2" key={index}>{item.title}</li>)}
+                        <li className="footer__services__items__item p2" key={index}><a className="footer__services__items__item__a p2" href={item.href}>{item.title} </a></li>)}
                 </ul>
             </div>
 

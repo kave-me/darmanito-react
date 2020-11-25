@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import navbarListItems from './NavbarNavigationItems'
 import Logo from "./Logo";
+import {Link} from 'react-router-dom';
+
 
 const Navbar = () => {
   const [burger, setBurger] = useState({ isOpen: false });
@@ -32,6 +34,10 @@ const Navbar = () => {
                   key={index}
                 >
                   {item.title}
+                  {/* <Link to={item.href}> <style>color: none</style>
+
+                  </Link> */}
+
                 </a>
               </li>
             );

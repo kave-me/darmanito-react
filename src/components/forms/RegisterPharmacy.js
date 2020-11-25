@@ -6,7 +6,6 @@ const RegisterPharmacy = (props) => {
 
     return(
         <div className="RegisterPharmacyFirstFormContainer">
-
             <form className="RegisterPharmacyFirstFormContainer__form"
             onSubmit={props.formik.onSubmit}>
 
@@ -84,7 +83,6 @@ const RegisterPharmacy = (props) => {
                             </div>
                         </div>
                     <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.isBoarding}</p>
-
                     </div>
 
                     <div className="RegisterPharmacyFirstFormContainer__form__workTimeRange">
@@ -105,8 +103,6 @@ const RegisterPharmacy = (props) => {
                         disabled={props.formik.errors !== undefined? false: false}>مرحله بعد</button>
                     </div>
                     <div className="RegisterPharmacyFirstFormContainer__form__uploadButton">
-                        {/* <p className="RegisterPharmacyFirstFormContainer__form__uploadButton__fileName">drugstore.jpg</p> */}
-                        {/* <label htmlFor="uploadPhoto">آپلود عکس داروخانه</label> */}
                         <input type="file" className="RegisterPharmacyFirstFormContainer__form__uploadButton__button"
                         accept="image/*" name='photo' value={props.formik.photo}  onChange={props.formik.handleChange}/>
                     </div>

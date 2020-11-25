@@ -389,16 +389,6 @@ p {
   cursor: pointer;
 }
 
-.footer__pages__items__item:hover,
-.footer__services__items__item:hover {
-  font-weight: bold;
-  border-right: 4px solid #00DE9A;
-  color: #2361B5;
-  padding-right: .5rem;
-  -webkit-transition: .3s ease;
-  transition: .3s ease;
-}
-
 .footer__pages {
   direction: rtl;
   -ms-flex-item-align: auto;
@@ -411,9 +401,20 @@ p {
   list-style: none;
 }
 
-.footer__pages__items__item {
+.footer__services__items__item__a {
+  text-decoration: none;
   color: #666666;
   cursor: pointer;
+}
+
+.footer__pages__items__item__a:hover,
+.footer__services__items__item__a:hover {
+  font-weight: bold;
+  border-right: 4px solid #00DE9A;
+  color: #2361B5;
+  padding-right: .5rem;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
 }
 
 .footer__branding__copyright {
