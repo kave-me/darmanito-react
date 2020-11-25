@@ -2,8 +2,7 @@ import React from 'react';
 const RegisterPharmacy = (props) => {
 
 
-
-
+    const borderControl = (error, class_name) => error? class_name+" borderError" : class_name
 
     return(
         <div className="RegisterPharmacyFirstFormContainer">
@@ -14,50 +13,57 @@ const RegisterPharmacy = (props) => {
                 <div className="RegisterPharmacyFirstFormContainer__form__fullName">
                     <label className="RegisterPharmacyFirstFormContainer__form__fullName__label"
                     htmlFor="fullName">نام و نام خانوادگی</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__fullName__input"
+                    <input className={borderControl(props.formik.errors.fullName,"RegisterPharmacyFirstFormContainer__form__fullName__input")}
                     value={props.formik.values.fullName} onChange={props.formik.handleChange} type="text" name="fullName"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.fullName}</p>
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__medicId">
                     <label className="RegisterPharmacyFirstFormContainer__form__medicId__label"
                     htmlFor="medicId">شماره نظام پزشکی</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__medicId__input"
+                    <input className={borderControl(props.formik.errors.medicId,"RegisterPharmacyFirstFormContainer__form__medicId__input")}
                     value={props.formik.values.medicId} onChange={props.formik.handleChange} type="number" name="medicId"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.medicId}</p>
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__placeName">
                     <label className="RegisterPharmacyFirstFormContainer__form__placeName__label"
                     htmlFor="placeName">نام داروخانه</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__placeName__input"
+                    <input className={borderControl(props.formik.errors.placeName,"RegisterPharmacyFirstFormContainer__form__placeName__input")}
                     value={props.formik.values.placeName} onChange={props.formik.handleChange} type="text" name="placeName"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.placeName}</p>
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__placePhone">
                     <label className="RegisterPharmacyFirstFormContainer__form__placePhone__label"
                     htmlFor="placePhone">شماره داروخانه</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__placePhone__input"
+                    <input className={borderControl(props.formik.errors.placePhone, "RegisterPharmacyFirstFormContainer__form__placePhone__input")}
                     value={props.formik.values.placePhone} onChange={props.formik.handleChange} type="number" name="placePhone"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.placePhone}</p>
                 </div>
                 
                 <div className="RegisterPharmacyFirstFormContainer__form__city">
                     <label className="RegisterPharmacyFirstFormContainer__form__city__label"
                     htmlFor="city">شهر</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__city__input"
+                    <input className={borderControl(props.formik.errors.city, "RegisterPharmacyFirstFormContainer__form__city__input")}
                     value={props.formik.values.city} onChange={props.formik.handleChange} type="text" name="city"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.city}</p>
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__district">
                     <label className="RegisterPharmacyFirstFormContainer__form__district__label"
                     htmlFor="district">منطقه</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__district__input"
+                    <input className={borderControl(props.formik.errors.district, "RegisterPharmacyFirstFormContainer__form__district__input")}
                     value={props.formik.values.district} onChange={props.formik.handleChange} type="text" name="district"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.district}</p>
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__fullAddress">
                     <label className="RegisterPharmacyFirstFormContainer__form__fullAddress__label"
                     htmlFor="fullAddress">آدرس دقیق</label>
-                    <input className="RegisterPharmacyFirstFormContainer__form__fullAddress__input"
+                    <input className={borderControl(props.formik.errors.fullAddress, "RegisterPharmacyFirstFormContainer__form__fullAddress__input")}
                     value={props.formik.values.fullAddress} onChange={props.formik.handleChange} type="text" name="fullAddress"/>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.fullAddress}</p>
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__timeSection">
@@ -74,9 +80,11 @@ const RegisterPharmacy = (props) => {
                                 <label className="RegisterPharmacyFirstFormContainer__form__boarding__false__label"
                                 htmlFor="isBoarding">روزانه</label>
                                 <input className="RegisterPharmacyFirstFormContainer__form__boarding__false__input"
-                                value={false} onChange={props.formik.handleChange} type="radio" name="isBoarding"/>
+                                value={false} onChange={props.formik.handleChange} checked="checked" type="radio" name="isBoarding"/>
                             </div>
                         </div>
+                    <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.isBoarding}</p>
+
                     </div>
 
                     <div className="RegisterPharmacyFirstFormContainer__form__workTimeRange">
@@ -93,11 +101,12 @@ const RegisterPharmacy = (props) => {
 
                 <div className="RegisterPharmacyFirstFormContainer__form__button">
                     <div className="RegisterPharmacyFirstFormContainer__form__nextButton">
-                        <button className="RegisterPharmacyFirstFormContainer__form__nextButton__button" onClick={props.nextStep}>مرحله بعد</button>
+                        <button className="RegisterPharmacyFirstFormContainer__form__nextButton__button" onClick={props.nextStep} 
+                        disabled={props.formik.errors !== undefined? false: false}>مرحله بعد</button>
                     </div>
                     <div className="RegisterPharmacyFirstFormContainer__form__uploadButton">
-                        <p className="RegisterPharmacyFirstFormContainer__form__uploadButton__fileName">drugstore.jpg</p>
-                        <label htmlFor="uploadPhoto">آپلود عکس داروخانه</label>
+                        {/* <p className="RegisterPharmacyFirstFormContainer__form__uploadButton__fileName">drugstore.jpg</p> */}
+                        {/* <label htmlFor="uploadPhoto">آپلود عکس داروخانه</label> */}
                         <input type="file" className="RegisterPharmacyFirstFormContainer__form__uploadButton__button"
                         accept="image/*" name='photo' value={props.formik.photo}  onChange={props.formik.handleChange}/>
                     </div>

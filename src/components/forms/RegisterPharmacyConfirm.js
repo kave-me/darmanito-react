@@ -25,7 +25,6 @@ const RegisterPharmacyConfirm = (props) => {
                 isBoarding= {props.formik.values.isBoarding}
                 id= {shortid.generate()}/>
             </div>
-            <form>
             <div className="RegisterPharmacyThirdFormContainer__preview">
                 <div className="RegisterPharmacyThirdFormContainer__preview-row1">
                     <div className="RegisterPharmacyThirdFormContainer__preview__placeName">
@@ -71,15 +70,15 @@ const RegisterPharmacyConfirm = (props) => {
                     </div>
                 </div>
 
-
+                <form onSubmit={props.formik.handleSubmit}>
                 <div className="RegisterPharmacyThirdFormContainer__preview__buttons">
-                    <button type="submit" onSubmit={() => props.formik.onSubmit()}>Submit</button>
+                    <button type="submit" >Submit</button>
                     <button onClick={props.nextStep}>next</button>
                     <button onClick={props.prevStep}>prev</button>
                 </div>
+                </form>
             </div>
         
-            </form>
         </div>
 
 

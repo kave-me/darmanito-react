@@ -1,3 +1,4 @@
+@charset "UTF-8";
 h1 {
   font-size: 36px;
 }
@@ -1574,6 +1575,12 @@ p {
   width: 75%;
 }
 
+.RegisterPharmacyFirstFormContainer__form__error {
+  height: 1rem;
+  color: red;
+  font-size: 14px;
+}
+
 .RegisterPharmacyFirstFormContainer__form__fullName {
   width: 47%;
   display: -webkit-box;
@@ -1583,7 +1590,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__fullName__label {
@@ -1611,7 +1618,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__medicId__label {
@@ -1639,7 +1646,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__placeName__label {
@@ -1667,7 +1674,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__placePhone__label {
@@ -1695,7 +1702,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__city__label {
@@ -1723,7 +1730,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__district__label {
@@ -1751,7 +1758,7 @@ p {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem 0;
+  margin: .5rem 0;
 }
 
 .RegisterPharmacyFirstFormContainer__form__fullAddress__label {
@@ -1964,7 +1971,25 @@ p {
   display: flex;
 }
 
-.RegisterPharmacyFirstFormContainer__form__uploadButton__button {
+.RegisterPharmacyFirstFormContainer__form__uploadButton__button::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.RegisterPharmacyFirstFormContainer__form__uploadButton__button::before {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  content: "آپلود عکس داروخانه";
   width: 10rem;
   height: 2.5rem;
   color: #1894ff;
@@ -1980,6 +2005,11 @@ p {
 
 .RegisterPharmacyFirstFormContainer__form__uploadButton__button:focus {
   outline: none;
+}
+
+.borderError,
+.borderError:focus {
+  border: 1px solid red;
 }
 
 .RegisterPharmacySecondFormContainer {

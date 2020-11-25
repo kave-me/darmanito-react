@@ -3,6 +3,7 @@ import {useFormik} from 'formik';
 import RegisterPharmacy from './forms/RegisterPharmacy';
 import RegisterPharmacyDetail from './forms/RegisterPharmacyDetail';
 import RegisterPharmacyConfirm from './forms/RegisterPharmacyConfirm';
+import * as Yup from 'yup';
 
 const RegisterPharmacyForm = () => {
   const [info, setInfo] = useState(
@@ -12,7 +13,7 @@ const RegisterPharmacyForm = () => {
     const formik = useFormik({
       initialValues: {
           fullName: '',
-          medicId: 0,
+          medicId: '',
           placeName: '',
           placePhone: '',
           city: '',
@@ -23,7 +24,29 @@ const RegisterPharmacyForm = () => {
           closingHour: 20,
           photo: null
       },
-      // validationSchema: {},
+      validationSchema: Yup.object({
+        fullName: Yup.string()
+                  .min(5, 'نام کوتاه است!')
+                  .required("فیلد اجباری است"),
+        medicId: Yup.number()
+                 .required("فیلد اجباری است"),
+        placeName: Yup.string()
+                   .required("فیلد اجباری است"),
+        placePhone: Yup.number()
+                    .required("فیلد اجباری است"),
+        city: Yup.string()
+              .required("فیلد اجباری است"),
+        district: Yup.string()
+                  .required("فیلد اجباری است"),
+        fullAddress: Yup.string()
+                     .required("فیلد اجباری است"),
+        isBoarding: Yup.boolean()
+                    .required("فیلد اجباری است"),
+        // openingHour: 8,
+        // closingHour: 20,
+        photo: Yup.number()
+                .required("فیلد اجباری است")
+      }),
       onSubmit: values => {alert(JSON.stringify(values));},
   });
 

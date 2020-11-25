@@ -39,10 +39,16 @@ const RegisterPharmacyDetail = (props) => {
                     <label className="RegisterPharmacySecondFormContainer__form__city__label"
                     htmlFor="city">شهر</label>
                     <select className="RegisterPharmacySecondFormContainer__form__city__select" name="city">
-                        <option value="Tehran">تهران</option>
-                        <option value="Alborz">البرز</option>
-                        <option value="Tehran">تهران</option>
-                        <option value="Alborz">البرز</option>
+                    <option value={props.formik.values.city}>
+                        {props.formik.values.city}</option>
+                        <option value="تهران">
+                            تهران</option>
+                        <option value="البرز">
+                            البرز</option>
+                        <option value="تهران">
+                            تهران</option>
+                        <option value="البرز">
+                            البرز</option>
                     </select>
                 </div>
                 <div className="RegisterPharmacySecondFormContainer__form__district">
@@ -50,6 +56,8 @@ const RegisterPharmacyDetail = (props) => {
                     htmlFor="district">منطقه</label>
                     <select className="RegisterPharmacySecondFormContainer__form__district__select"
                     name="district">
+                        <option value={props.formik.values.district}>
+                        {props.formik.values.district}</option>
                         <option value="1">منطقه یک</option>
                         <option value="2">منطقه دو</option>
                         <option value="3">منطقه سه</option>
