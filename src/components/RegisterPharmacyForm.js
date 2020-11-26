@@ -22,7 +22,7 @@ const RegisterPharmacyForm = () => {
           isBoarding: false,
           openingHour: 8,
           closingHour: 20,
-          photo: null
+          photo: 0
       },
       validationSchema: Yup.object({
         fullName: Yup.string()
@@ -47,7 +47,7 @@ const RegisterPharmacyForm = () => {
         photo: Yup.number()
                 .required("فیلد اجباری است")
       }),
-      onSubmit: values => {alert(JSON.stringify(values));},
+      onSubmit: values => alert(JSON.stringify(values)),
   });
 
     const nextStep = (state) => {

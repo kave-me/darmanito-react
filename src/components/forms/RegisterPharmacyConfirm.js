@@ -26,7 +26,7 @@ const RegisterPharmacyConfirm = (props) => {
                 id= {shortid.generate()}/>
             </div>
             <div className="RegisterPharmacyThirdFormContainer__preview">
-                <div className="RegisterPharmacyThirdFormContainer__preview-row1">
+                {/* <div className="RegisterPharmacyThirdFormContainer__preview-row1"> */}
                     <div className="RegisterPharmacyThirdFormContainer__preview__placeName">
                         <p className="RegisterPharmacyThirdFormContainer__preview__placeName__label">نام داروخانه</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__placeName__value">{props.formik.values.placeName}</p>
@@ -40,8 +40,8 @@ const RegisterPharmacyConfirm = (props) => {
                         <p className="RegisterPharmacyThirdFormContainer__preview__city__label">شهر</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__city__value">{props.formik.values.city}</p>
                     </div>
-                </div>
-                <div className="RegisterPharmacyThirdFormContainer__preview-row2">
+                {/* </div> */}
+                {/* <div className="RegisterPharmacyThirdFormContainer__preview-row2"> */}
                     <div className="RegisterPharmacyThirdFormContainer__preview__district">
                         <p className="RegisterPharmacyThirdFormContainer__preview__district__label">منطقه</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__district__value">{props.formik.values.district}</p>
@@ -50,16 +50,16 @@ const RegisterPharmacyConfirm = (props) => {
                         <p className="RegisterPharmacyThirdFormContainer__preview__workingHours__label">ساعت کاری</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__workingHours__value">{props.formik.values.district? "شبانه روزی" : "روزانه"}</p>
                     </div>
-                </div>
-                <div className="RegisterPharmacyThirdFormContainer__preview-row3">
+                {/* </div> */}
+                {/* <div className="RegisterPharmacyThirdFormContainer__preview-row3"> */}
                     <div className="RegisterPharmacyThirdFormContainer__preview__fullAddress">
                         <p className="RegisterPharmacyThirdFormContainer__preview__fullAddress__label">آدرس دقیق</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__fullAddress__value">{props.formik.values.fullAddress}</p>
                     </div>
-                </div>
+                {/* </div> */}
 
-                <div className="RegisterPharmacyThirdFormContainer__preview-line"></div>
-                <div className="RegisterPharmacyThirdFormContainer__preview-row4">
+                <div className="RegisterPharmacyThirdFormContainer__preview__line"></div>
+                {/* <div className="RegisterPharmacyThirdFormContainer__preview-row4"> */}
                     <div className="RegisterPharmacyThirdFormContainer__preview__fullName">
                         <p className="RegisterPharmacyThirdFormContainer__preview__fullName__label">نام و نام خانوادگی موسس</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__fullName__value">{props.formik.values.fullName}</p>
@@ -68,13 +68,14 @@ const RegisterPharmacyConfirm = (props) => {
                         <p className="RegisterPharmacyThirdFormContainer__preview__medicId__label">شماره نظام پزشکی</p>
                         <p className="RegisterPharmacyThirdFormContainer__preview__medicId__value">{props.formik.values.medicId}</p>
                     </div>
-                </div>
+                {/* </div> */}
 
-                <form onSubmit={props.formik.handleSubmit}>
-                <div className="RegisterPharmacyThirdFormContainer__preview__buttons">
+                <form className="RegisterPharmacyThirdFormContainer__preview__form"
+                 onSubmit={props.formik.handleSubmit}>
+                <div className="RegisterPharmacyThirdFormContainer__preview__form__buttons">
                     <button type="submit" >Submit</button>
-                    <button onClick={props.nextStep}>next</button>
-                    <button onClick={props.prevStep}>prev</button>
+                    {/* <button onClick={props.nextStep}>next</button>
+                    <button onClick={props.prevStep}>prev</button> */}
                 </div>
                 </form>
             </div>

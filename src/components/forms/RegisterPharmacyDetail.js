@@ -38,7 +38,8 @@ const RegisterPharmacyDetail = (props) => {
                 <div className="RegisterPharmacySecondFormContainer__form__city">
                     <label className="RegisterPharmacySecondFormContainer__form__city__label"
                     htmlFor="city">شهر</label>
-                    <select className="RegisterPharmacySecondFormContainer__form__city__select" name="city">
+                    <select onChange={props.formik.handleChange}
+                    className="RegisterPharmacySecondFormContainer__form__city__select" name="city">
                     <option value={props.formik.values.city}>
                         {props.formik.values.city}</option>
                         <option value="تهران">
@@ -54,7 +55,8 @@ const RegisterPharmacyDetail = (props) => {
                 <div className="RegisterPharmacySecondFormContainer__form__district">
                     <label className="RegisterPharmacySecondFormContainer__form__district__label"
                     htmlFor="district">منطقه</label>
-                    <select className="RegisterPharmacySecondFormContainer__form__district__select"
+                    <select onChange={props.formik.handleChange}
+                    className="RegisterPharmacySecondFormContainer__form__district__select"
                     name="district">
                         <option value={props.formik.values.district}>
                         {props.formik.values.district}</option>

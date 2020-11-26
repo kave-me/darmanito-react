@@ -100,11 +100,11 @@ const RegisterPharmacy = (props) => {
                 <div className="RegisterPharmacyFirstFormContainer__form__button">
                     <div className="RegisterPharmacyFirstFormContainer__form__nextButton">
                         <button className="RegisterPharmacyFirstFormContainer__form__nextButton__button" onClick={props.nextStep} 
-                        disabled={props.formik.errors !== undefined? false: false}>مرحله بعد</button>
+                        disabled={props.formik.isValid? true: false}>مرحله بعد</button>
                     </div>
                     <div className="RegisterPharmacyFirstFormContainer__form__uploadButton">
                         <input type="file" className="RegisterPharmacyFirstFormContainer__form__uploadButton__button"
-                        accept="image/*" name='photo' value={props.formik.photo}  onChange={props.formik.handleChange}/>
+                        accept="image/*" name='photo' value={props.formik.photo}  onChange={event => props.formik.setFieldValue('photo', URL.createObjectURL(event.currentTarget.files[0]))}/>
                     </div>
                 </div>
             </form>
