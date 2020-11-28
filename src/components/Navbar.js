@@ -1,15 +1,23 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import navbarListItems from './NavbarNavigationItems'
 import Logo from "./Logo";
-import {Link} from 'react-router-dom';
-
+import {useLocation, Link} from 'react-router-dom';
 
 const Navbar = () => {
   const [burger, setBurger] = useState({ isOpen: false });
   const switchBurger = () =>
     setBurger((burger) => ({ isOpen: !burger.isOpen }));
 
-
+  const location = useLocation();
+  const [links, setLinks] = useState(navbarListItems);
+  const handleNavigation = () => {
+    let newNavItems = links.map(item => {
+                      item.href === location.pathname
+                      ? item.active = true
+                      : item.active=false;
+                       return (item)})
+      console.log(newNavItems);
+      setLinks(newNavItems)}
   return (
     <nav className="section navbar">
       <Logo />
@@ -21,24 +29,20 @@ const Navbar = () => {
         }
       >
         <ul className="navbar__items">
-          {navbarListItems.map((item, index) => {
+          {links.map((item, index) => {
             return (
               <li className="navbar__items__li" key={index}>
-                <a
-                  href={item.href}
+                <Link
+                  to={item.href}
+                  onClick={handleNavigation}
                   className={
                     item.active
                       ? "navbar__items__li__a navbar__items__li__a__active"
                       : "navbar__items__li__a"
                   }
-                  key={index}
-                >
+                  key={index}>
                   {item.title}
-                  {/* <Link to={item.href}> <style>color: none</style>
-
-                  </Link> */}
-
-                </a>
+                </Link>
               </li>
             );
           })}
