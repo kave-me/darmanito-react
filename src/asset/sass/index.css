@@ -1647,8 +1647,8 @@ p {
 }
 
 .mainRegister__img {
-  width: auto;
-  height: 350px;
+  width: 35%;
+  height: auto;
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
@@ -1711,6 +1711,46 @@ p {
 
 .mainRegister__info__input__button:focus {
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mainRegister {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .mainRegister__img {
+    width: 50%;
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 1rem;
+  }
+  .mainRegister__info {
+    width: 70%;
+  }
+  .mainRegister__info__title {
+    height: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+  .mainRegister__info__description {
+    margin-top: 2rem;
+  }
+  .mainRegister__info__input {
+    width: 95%;
+  }
+  .mainRegister__info__input__input {
+    width: 90%;
+  }
 }
 
 .RegisterPharmacyFirstFormContainer {

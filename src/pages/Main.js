@@ -14,7 +14,7 @@ const Main = () => {
             <MainAbout/>
             <MainFeatures/>
             <MainDownload/>
-            {/* <MainRegister/> */}
+            <MainRegister/>
             <Support/>
             <Footer/>
         </div>

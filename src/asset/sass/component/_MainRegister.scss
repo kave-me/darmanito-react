@@ -12,8 +12,8 @@ justify-content: center;
     box-shadow: 0 0 20px rgba($primary-color, .2);
     border-radius: 20px;
     &__img {
-        width: auto;
-        height: 350px;
+        width: 35%;
+        height: auto;
         align-self: flex-end;
     }
     &__info {
@@ -63,4 +63,36 @@ justify-content: center;
         }
     }
 
+}
+@media screen and (max-width: 768px) {
+    .mainRegister {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+        &__img {
+            width: 50%;
+            height: auto;
+            align-self: center;
+            margin-bottom: 1rem;
+        }
+        &__info {
+            width: 70%;
+            &__title {
+                height: 2rem;
+                margin-bottom: 3rem;
+                font-size: 1.2rem;
+            }
+            &__description {
+                margin-top: 2rem;
+            }
+            &__input {
+                width: 95%;
+                &__input {
+                    width: 90%;
+                }
+            }
+        }
+    }
 }
