@@ -1658,6 +1658,7 @@ p {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  width: 60%;
 }
 
 .mainRegister__info__title {

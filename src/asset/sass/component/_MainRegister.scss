@@ -19,6 +19,7 @@ justify-content: center;
     &__info {
         direction: rtl;
         align-self: center;
+        width: 60%;
         &__title {
             color: $tertiary-color;
             border-right: 4px solid $secondary-color;
