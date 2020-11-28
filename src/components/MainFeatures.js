@@ -62,7 +62,7 @@ const MainFeatures = () => {
         }))
     )
     return(
-        <div className="mainFeaturesContainer ">
+        <div className="mainFeaturesContainer section">
             <div className="mainFeatures">
                 <h2 className="mainFeatures__title">امکانات درمانیتو</h2>
                 <div className="mainFeatures__icons">

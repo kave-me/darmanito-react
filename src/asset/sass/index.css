@@ -1400,6 +1400,9 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+  .section {
+    padding: 0;
+  }
   .mainFeaturesContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1416,7 +1419,6 @@ p {
             align-items: center;
   }
   .mainFeaturesContainer .mainFeatures {
-    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
