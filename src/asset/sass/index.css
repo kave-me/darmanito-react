@@ -1224,9 +1224,9 @@ p {
 }
 
 .mainAbout__icons__icon__image {
-  width: 80px;
-  height: 80px;
-  padding: 20px;
+  width: 100px;
+  height: 100px;
+  padding: 30px;
   margin: 10px;
   border-radius: 10px;
   -webkit-box-shadow: 0 0 10px rgba(24, 148, 255, 0.3);
@@ -1235,6 +1235,27 @@ p {
 
 .mainAbout__icons__icon__text {
   font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+  .mainAbout {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainAbout__image {
+    width: 70%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .mainAbout__icons {
+    display: none;
+  }
 }
 
 .mainFeatures {

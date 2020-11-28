@@ -38,9 +38,9 @@
         margin-top: 10%;
         &__icon {
             &__image {
-                width: 80px;
-                height: 80px;
-                padding: 20px;
+                width: 100px;
+                height: 100px;
+                padding: 30px;
                 margin:10px;
                 border-radius: 10px;
                 box-shadow: 0 0 10px rgba($primary-color, .3);
@@ -54,6 +54,19 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .mainAbout {
+        display: flex;
+        flex-direction: column;
+        &__image {
+            width: 70%;
+            align-self: center;
+        }
+        &__icons {
+            display: none;
         }
     }
 }

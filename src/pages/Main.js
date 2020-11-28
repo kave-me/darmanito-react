@@ -11,8 +11,8 @@ const Main = () => {
     return (
         <div className="mainContainer container">
             <MainHeader/>
-            {/* <MainAbout/>
-            <MainFeatures/>
+            <MainAbout/>
+            {/* <MainFeatures/>
             <MainDownload/>
             <MainRegister/> */}
             <Support/>
