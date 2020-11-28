@@ -44,3 +44,29 @@
         width: 400px;
     }
 }
+@media screen and (max-width: 780px){
+    .mainHeader {
+        display: flex;
+        flex-direction: column-reverse;
+        width: 100%;
+        &__image{
+            width: 70%;
+        }
+        &__textAndButtons {
+            width: 70%;
+            &__title, &__description {
+                text-align: center;
+            }
+            &__buttons {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 1rem;
+                &__download, &__register {
+                    margin: 1rem;
+                }
+            }
+        }
+    }
+}

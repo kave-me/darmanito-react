@@ -1102,6 +1102,47 @@ p {
   width: 400px;
 }
 
+@media screen and (max-width: 780px) {
+  .mainHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+  .mainHeader__image {
+    width: 70%;
+  }
+  .mainHeader__textAndButtons {
+    width: 70%;
+  }
+  .mainHeader__textAndButtons__title, .mainHeader__textAndButtons__description {
+    text-align: center;
+  }
+  .mainHeader__textAndButtons__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+  .mainHeader__textAndButtons__buttons__download, .mainHeader__textAndButtons__buttons__register {
+    margin: 1rem;
+  }
+}
+
 .mainAboutContainer {
   margin-top: 5rem;
   margin-bottom: 5rem;
