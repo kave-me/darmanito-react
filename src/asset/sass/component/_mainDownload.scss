@@ -65,3 +65,28 @@
 
     }
 }
+@media screen and (max-width: 868px) {
+    .mainDownload {
+        flex-direction: column;
+        &__icons {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        &__img {
+            margin-top: 3rem;
+            align-self: center;
+        }
+        &__info__input {
+            width: 90%;
+            display: flex;
+            // justify-content: center;
+            &__input {
+                width: 50%;
+
+            }
+        }
+    }
+    
+}

@@ -13,8 +13,8 @@ const Main = () => {
             <MainHeader/>
             <MainAbout/>
             <MainFeatures/>
-            {/* <MainDownload/>
-            <MainRegister/> */}
+            <MainDownload/>
+            {/* <MainRegister/> */}
             <Support/>
             <Footer/>
         </div>
