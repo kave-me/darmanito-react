@@ -12,8 +12,8 @@ const Main = () => {
         <div className="mainContainer container">
             <MainHeader/>
             <MainAbout/>
-            {/* <MainFeatures/>
-            <MainDownload/>
+            <MainFeatures/>
+            {/* <MainDownload/>
             <MainRegister/> */}
             <Support/>
             <Footer/>
