@@ -1673,7 +1673,7 @@ p {
 }
 
 .mainRegister__img {
-  width: 35%;
+  width: 30%;
   height: auto;
   -ms-flex-item-align: end;
       align-self: flex-end;
