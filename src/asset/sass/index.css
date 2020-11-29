@@ -859,7 +859,7 @@ p {
   margin: 0 0 auto 0;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1150px) {
   .aboutUs__header {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -868,6 +868,7 @@ p {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+    margin: 1.5rem 0;
   }
   .aboutUs__header__icons {
     -ms-flex-item-align: center;
