@@ -54,3 +54,21 @@
 
     }
 }
+@media screen and (max-width: 768px) {
+    .aboutUs__header {
+        display: flex;
+        flex-direction: column-reverse;
+        &__icons {
+            align-self: center;
+        }
+        &__textAndInput {
+            width: 95%;
+            &__description {
+                margin-bottom: 2rem;
+            }
+            &__input {
+                width: 90%;
+            }
+        }
+    }
+}

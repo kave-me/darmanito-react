@@ -1,7 +1,7 @@
 import React, { useState} from "react";
 import navbarListItems from './NavbarNavigationItems'
 import Logo from "./Logo";
-import {useLocation, Link} from 'react-router-dom';
+import {useLocation, NavLink} from 'react-router-dom';
 
 const Navbar = () => {
   const [burger, setBurger] = useState({ isOpen: false });
@@ -16,7 +16,6 @@ const Navbar = () => {
                       ? item.active = true
                       : item.active=false;
                        return (item)})
-      console.log(newNavItems);
       setLinks(newNavItems)}
   return (
     <nav className="section navbar">
@@ -32,17 +31,15 @@ const Navbar = () => {
           {links.map((item, index) => {
             return (
               <li className="navbar__items__li" key={index}>
-                <Link
+                <NavLink
+                  exact={true}
                   to={item.href}
                   onClick={handleNavigation}
-                  className={
-                    item.active
-                      ? "navbar__items__li__a navbar__items__li__a__active"
-                      : "navbar__items__li__a"
-                  }
+                  activeClassName= "navbar__items__li__a__active"
+                  className= "navbar__items__li__a"
                   key={index}>
                   {item.title}
-                </Link>
+                </NavLink>
               </li>
             );
           })}

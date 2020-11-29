@@ -859,6 +859,32 @@ p {
   margin: 0 0 auto 0;
 }
 
+@media screen and (max-width: 768px) {
+  .aboutUs__header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .aboutUs__header__icons {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .aboutUs__header__textAndInput {
+    width: 95%;
+  }
+  .aboutUs__header__textAndInput__description {
+    margin-bottom: 2rem;
+  }
+  .aboutUs__header__textAndInput__input {
+    width: 90%;
+  }
+}
+
 .AboutUsHeaderCard {
   display: -webkit-box;
   display: -ms-flexbox;

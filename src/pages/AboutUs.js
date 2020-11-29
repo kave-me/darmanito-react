@@ -10,8 +10,8 @@ const AboutUs = () => {
     return (
         <div className="container">
             <Header/>
-            <Statics/>
-            <Services/>
+            {/* <Statics/> */}
+            {/* <Services/> */}
             <Support/>
             <Footer/>
         </div>
