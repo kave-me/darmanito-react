@@ -5,8 +5,16 @@
             border-right: 4px solid $secondary-color;
             direction: rtl;
             padding-right: 1rem;
+            margin-top: 1rem;
             margin-bottom: 3rem;
         }
+}
+@media screen and (max-width: 700px) {
+    .faqPageMainSection {
+        &__title {
+            // margin-bottom: 1rem;
+        }
+    }
 }
 
 

@@ -631,6 +631,7 @@ p {
   border-right: 4px solid #00DE9A;
   direction: rtl;
   padding-right: 1rem;
+  margin-top: 1rem;
   margin-bottom: 3rem;
 }
 
@@ -681,6 +682,8 @@ p {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .FaqQuestionContainer {
