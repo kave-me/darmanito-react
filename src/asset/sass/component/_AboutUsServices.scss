@@ -1,6 +1,6 @@
 .aboutUsServices {
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     &__title {
         direction: rtl;
         color: $tertiary-color;
@@ -49,10 +49,21 @@
                 cursor: pointer;
                 align-self: center;
                 margin-top: auto;
+                    width: 12rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
             }
             &__button:focus {
                 outline: none;
             }
         }
+    }
+}
+@media screen and (max-width: 900px) {
+    .aboutUsServices {
+        margin: 2rem 0;
     }
 }

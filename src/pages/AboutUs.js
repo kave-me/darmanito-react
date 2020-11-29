@@ -11,7 +11,7 @@ const AboutUs = () => {
         <div className="container">
             <Header/>
             <Statics/>
-            {/* <Services/> */}
+            <Services/>
             <Support/>
             <Footer/>
         </div>
