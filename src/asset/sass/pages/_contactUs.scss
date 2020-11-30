@@ -1,3 +1,7 @@
+.contactUsFormAndMap {
+    margin: 2rem 0;
+}
+
 .messageForm {
     flex: .5;
 }
@@ -23,6 +27,7 @@
 }
 .messageForm__form {
     display: flex;
+    width: 35vw;
     // flex: .5;
     flex-direction: column;
     direction: rtl;
@@ -31,7 +36,7 @@
 .contactUsFormAndMap {
     // flex: 1 0 35%;
     display: flex;
-    flex-wrap: wrap;
+    // flex-wrap: wrap;
     flex-direction: row-reverse;
     justify-content: space-around;
 }
@@ -41,8 +46,86 @@
     background-color: white;
     border: 2px solid $primary-color;
     border-radius: 10px;
+}
+.leaflet-container {
+    border-radius: 10px;
+    width: 40vw;
+    height: 450px;
+    margin-top: 2rem;
 
 }
-// .leaflet-container {
-//     width: 100px;
-// }
+.contactUs__map__cover {
+    font-size: 14px;
+    position: relative;
+    margin: 0 auto;
+    top: 250px;
+    // bottom: 20px;
+    z-index: 10000;
+    width: 35vw;
+    height: 40%;
+    background-color: rgba(255,255,255,.9);
+    box-shadow: 0 0 20px rgba($primary-color, .5);
+    border-radius: 20px;
+    display: flex;
+    direction: rtl;
+    justify-content: space-around;
+    padding: 1rem;
+    font-family: 'Yekan' ,'Courier New', Courier, monospace;
+    overflow: scroll;
+    &__address {
+        margin: auto 0;
+        width: 45%;
+        &__label {
+            font-weight: bold;
+        }
+    }
+    &__emailAndPhoneNumberContainer {
+        margin: auto 0;
+        width: 45%;
+
+    }
+    &__email {
+        margin: .5rem 0;
+        font-weight: bold;
+        &__value {
+            color: $primary-color;
+        }
+    }
+    &__phoneNumber {
+        margin: .5rem 0;
+        font-weight: bold;
+        &__value {
+            color: $primary-color;
+        }
+
+
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .contactUsFormAndMap {
+    flex-direction: column-reverse;
+    }
+    .messageForm__form {
+        display: flex;
+        width: 80vw;
+        margin: 3rem auto;
+    }   
+    .leaflet-container {
+        width: 80vw;
+        height: 60vh;
+        margin: 0 auto;
+    }
+    .contactUs__map__cover {
+        width: 70vw;
+        height: 35%;
+
+
+    }
+}
+@media screen and (max-width: 584px) {
+    .contactUs__map__cover__address {
+        display: none;
+    }
+
+}
