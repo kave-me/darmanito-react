@@ -2260,7 +2260,7 @@ p {
 }
 
 .RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput, .RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput {
-  width: 200px;
+  width: 120px;
   height: 2.5rem;
   margin: 0px 1rem;
   border-radius: 10px;
@@ -2364,6 +2364,38 @@ p {
 .borderError,
 .borderError:focus {
   border: 1px solid red;
+}
+
+@media screen and (max-width: 780px) {
+  .RegisterPharmacyFirstFormContainer__form {
+    width: 90%;
+  }
+  .RegisterPharmacyFirstFormContainer__form__fullName, .RegisterPharmacyFirstFormContainer__form__medicId, .RegisterPharmacyFirstFormContainer__form__placeName, .RegisterPharmacyFirstFormContainer__form__placePhone, .RegisterPharmacyFirstFormContainer__form__city, .RegisterPharmacyFirstFormContainer__form__district, .RegisterPharmacyFirstFormContainer__form__fullAddress {
+    width: 100%;
+  }
+  .RegisterPharmacyFirstFormContainer__form__timeSection {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .RegisterPharmacyFirstFormContainer__form__workTimeRange__fromInput, .RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput {
+    width: 40%;
+    margin: .5rem;
+  }
+  .RegisterPharmacyFirstFormContainer__form__button {
+    direction: rtl;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 1rem auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .RegisterPharmacyFirstFormContainer__form__nextButton__button {
+    width: 70vw;
+    margin: 1rem auto;
+  }
 }
 
 .RegisterPharmacySecondFormContainer {

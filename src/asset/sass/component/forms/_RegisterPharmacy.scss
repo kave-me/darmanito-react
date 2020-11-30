@@ -217,12 +217,11 @@
             display: flex;
             flex-direction: column;
             &__fromInput, &__toInput {
-                width: 200px;
+                width: 120px;
                 height: 2.5rem;
                 margin: 0px 1rem;
                 border-radius: 10px;
                 border: 1px solid rgb(167, 167, 167);
-
             }
             &__fromInput:focus, &__toInput:focus {
                 border: 1px solid $primary-color;
@@ -269,7 +268,6 @@
                 justify-content: center;
                 align-items: center;
                 content: "آپلود عکس داروخانه";
-                // padding: 2.5rem 10rem;
                 width: 10rem;
                 height: 2.5rem;
                 color: $primary-color;
@@ -286,11 +284,50 @@
                 outline: none;
             }
         }
-
     }
 }
 .borderError,
 .borderError:focus
 {
     border: 1px solid red;
+}
+@media screen and (max-width: 780px) {
+    .RegisterPharmacyFirstFormContainer {
+        &__form {
+            width: 90%;
+            &__fullName,
+            &__medicId,
+            &__placeName,
+            &__placePhone,
+            &__city,
+            &__district,
+            &__fullAddress {
+                width: 100%;
+            }
+            &__timeSection {
+                flex-direction: column;
+
+            }
+            &__workTimeRange {
+                &__fromInput,
+                &__toInput {
+                    width: 40%;
+                    margin: .5rem;
+                }
+            }
+            &__button {
+                // flex-direction: row-reverse;
+                direction: rtl;
+                flex-wrap: wrap;
+                margin: 1rem auto;
+                justify-content: center;
+            }
+            &__nextButton__button {
+                width: 70vw;
+                margin: 1rem auto;
+            }
+        }
+
+    }
+
 }
