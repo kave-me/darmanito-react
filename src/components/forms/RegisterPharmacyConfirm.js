@@ -73,9 +73,10 @@ const RegisterPharmacyConfirm = (props) => {
                 <form className="RegisterPharmacyThirdFormContainer__preview__form"
                  onSubmit={props.formik.handleSubmit}>
                 <div className="RegisterPharmacyThirdFormContainer__preview__form__buttons">
-                    <button type="submit" >Submit</button>
-                    {/* <button onClick={props.nextStep}>next</button>
-                    <button onClick={props.prevStep}>prev</button> */}
+                    <button className="RegisterPharmacyThirdFormContainer__preview__form__buttons__edit"
+                    type="button" onClick={props.stepZero}>ویراش اطلاعات</button>
+                    <button className="RegisterPharmacyThirdFormContainer__preview__form__buttons__submit"
+                    type="submit" >تکمیل ثبت نام</button>
                 </div>
                 </form>
             </div>

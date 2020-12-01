@@ -2631,6 +2631,56 @@ p {
   margin: 2rem auto;
 }
 
+.RegisterPharmacyThirdFormContainer__preview__form__buttons__submit {
+  width: 10rem;
+  height: 2.5rem;
+  color: white;
+  background-color: #1894ff;
+  border: 2px solid #1894ff;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #1894ff;
+  margin: 1rem .2rem;
+  font-weight: bold;
+}
+
+.RegisterPharmacyThirdFormContainer__preview__form__buttons__edit {
+  width: 10rem;
+  height: 2.5rem;
+  color: #1894ff;
+  background-color: white;
+  border: 2px solid #1894ff;
+  cursor: pointer;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 2px solid #1894ff;
+  margin: 1rem .2rem;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 968px) {
+  .RegisterPharmacyThirdFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .RegisterPharmacyThirdFormContainer__cards {
+    width: 100%;
+  }
+  .RegisterPharmacyThirdFormContainer__preview {
+    width: 100%;
+  }
+  .RegisterPharmacyThirdFormContainer__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 * {
   padding: 0;
   margin: 0;

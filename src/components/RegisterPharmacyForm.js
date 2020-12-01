@@ -42,10 +42,6 @@ const RegisterPharmacyForm = () => {
                      .required("فیلد اجباری است"),
         isBoarding: Yup.boolean()
                     .required("فیلد اجباری است"),
-        // openingHour: 8,
-        // closingHour: 20,
-        photo: Yup.number()
-                .required("فیلد اجباری است")
       }),
       onSubmit: values => alert(JSON.stringify(values)),
   });
@@ -65,6 +61,11 @@ const RegisterPharmacyForm = () => {
              : step-1;
       return(setInfo({...state, step:step}));
     }
+    const stepZero = (state) => {
+      let {step} = state;
+      step = 0;
+      return(setInfo({...state, step:step}));
+    }
 
     switch (info.step) {
       case 0:
@@ -81,7 +82,8 @@ const RegisterPharmacyForm = () => {
         return(<RegisterPharmacyConfirm
           formik={formik}
           nextStep={() => nextStep(info)}
-          prevStep={() => prevStep(info)}/>);
+          prevStep={() => prevStep(info)}
+          stepZero={() => stepZero(info)}/>);
       default:
         return(<RegisterPharmacy
           formik={formik}
