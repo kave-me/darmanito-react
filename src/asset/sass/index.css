@@ -2512,6 +2512,21 @@ p {
   outline: none;
 }
 
+@media screen and (max-width: 968px) {
+  .RegisterPharmacySecondFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .RegisterPharmacySecondFormContainer__form {
+    width: 100%;
+  }
+  .RegisterPharmacySecondFormContainer__cards {
+    width: 100%;
+  }
+}
+
 .progressBarContainer {
   width: 200px;
   display: -webkit-box;

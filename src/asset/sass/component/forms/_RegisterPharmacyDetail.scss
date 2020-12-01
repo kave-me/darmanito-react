@@ -68,3 +68,15 @@
         }
     }
 }
+@media screen and (max-width: 968px) {
+    .RegisterPharmacySecondFormContainer {
+        flex-direction: column;
+        &__form {
+            width: 100%;
+        }
+        &__cards {
+            width: 100%;
+
+        }
+    }
+}
