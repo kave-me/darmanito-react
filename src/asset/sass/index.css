@@ -656,7 +656,7 @@ p {
       justify-content: space-around;
   padding: 1rem;
   font-family: 'Yekan' ,'Courier New', Courier, monospace;
-  overflow: scroll;
+  overflow: visible;
 }
 
 .contactUs__map__cover__address {
