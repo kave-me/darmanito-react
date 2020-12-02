@@ -16,7 +16,7 @@
                 width: 500px;
                 height: 3.5rem;
                 display: flex;
-                justify-content: space-around;
+                justify-content: space-between;
                 align-items: center;
                 border-radius: 10px;
                 margin-left: auto;
@@ -25,6 +25,7 @@
                     border: none;
                     width: 250px;
                     height: 3rem;
+                    margin-right: 2%;
                 }
                 &__input:focus {
                     outline: none;
@@ -37,6 +38,7 @@
                     border-radius: 10px;
                     border: none;
                     cursor: pointer;
+                    margin-left: 2%;
                 }
                 &__button:focus {
                     outline: none;

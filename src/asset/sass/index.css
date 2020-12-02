@@ -914,8 +914,9 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -928,6 +929,7 @@ p {
   border: none;
   width: 250px;
   height: 3rem;
+  margin-right: 2%;
 }
 
 .aboutUs__header__textAndInput__input__input:focus {
@@ -942,6 +944,7 @@ p {
   border-radius: 10px;
   border: none;
   cursor: pointer;
+  margin-left: 2%;
 }
 
 .aboutUs__header__textAndInput__input__button:focus {
