@@ -69,23 +69,27 @@ const RegisterPharmacy = (props) => {
                     <div className="RegisterPharmacyFirstFormContainer__form__boarding">
                         <p className="RegisterPharmacyFirstFormContainer__form__boarding__label">ساعات کاری</p>
                         <div className="RegisterPharmacyFirstFormContainer__form__boarding__select">
-                            <div className="RegisterPharmacyFirstFormContainer__form__boarding__true">
+                            <div className={props.formik.values.isBoarding
+                                            ? "RegisterPharmacyFirstFormContainer__form__boarding__true RegisterPharmacyFirstFormContainer__form__boarding__false-active"
+                                            : "RegisterPharmacyFirstFormContainer__form__boarding__true"}>
                                 <label className="RegisterPharmacyFirstFormContainer__form__boarding__true__label"
                                 htmlFor="isBoarding">شبانه روزی</label>
-                                <input className="RegisterPharmacyFirstFormContainer__form__boarding__true__input"
-                                value={true} onChange={props.formik.handleChange} type="radio" name="isBoarding"/>
+                                <input className="RegisterPharmacyFirstFormContainer__form__boarding__true__input" 
+                                value={props.formik.isBoarding} onChange={e => props.formik.setFieldValue('isBoarding', e.target.checked)} type="radio" name="isBoarding"/>
                             </div>
-                            <div className="RegisterPharmacyFirstFormContainer__form__boarding__false RegisterPharmacyFirstFormContainer__form__boarding__false-active">
+                            <div className={props.formik.values.isBoarding
+                            ? "RegisterPharmacyFirstFormContainer__form__boarding__false"
+                            : "RegisterPharmacyFirstFormContainer__form__boarding__false RegisterPharmacyFirstFormContainer__form__boarding__false-active"}>
                                 <label className="RegisterPharmacyFirstFormContainer__form__boarding__false__label"
                                 htmlFor="isBoarding">روزانه</label>
                                 <input className="RegisterPharmacyFirstFormContainer__form__boarding__false__input"
-                                value={false} onChange={props.formik.handleChange} checked="checked" type="radio" name="isBoarding"/>
+                                value={props.formik.isBoarding} onChange={e => props.formik.setFieldValue('isBoarding', false)} type="radio" name="isBoarding"/>
                             </div>
                         </div>
                     <p className="RegisterPharmacyFirstFormContainer__form__error">{props.formik.errors.isBoarding}</p>
                     </div>
 
-                    <div className="RegisterPharmacyFirstFormContainer__form__workTimeRange">
+                    {!props.formik.values.isBoarding ? <div className="RegisterPharmacyFirstFormContainer__form__workTimeRange">
                         <label className="RegisterPharmacyFirstFormContainer__form__workTimeRange__label"
                         htmlFor="workTimeRange">ساعات کاری</label>
                         <div>
@@ -94,7 +98,7 @@ const RegisterPharmacy = (props) => {
                             <input className="RegisterPharmacyFirstFormContainer__form__workTimeRange__toInput"
                             type="text" placeholder="تا" name="workTimeRangeTo"/>
                         </div>
-                    </div>
+                    </div> : null}
                 </div>
 
                 <div className="RegisterPharmacyFirstFormContainer__form__button">
@@ -104,7 +108,7 @@ const RegisterPharmacy = (props) => {
                     </div>
                     <div className="RegisterPharmacyFirstFormContainer__form__nextButton">
                         <button className="RegisterPharmacyFirstFormContainer__form__nextButton__button" onClick={props.nextStep} 
-                        disabled={props.formik.isValid? true: false}>مرحله بعد</button>
+                        disabled={props.formik.isValid? false: true}>مرحله بعد</button>
                     </div>
                 </div>
             </form>

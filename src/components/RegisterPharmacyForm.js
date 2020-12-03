@@ -19,14 +19,14 @@ const RegisterPharmacyForm = () => {
           city: '',
           district: '',
           fullAddress: '',
-          isBoarding: false,
+          isBoarding: true,
           openingHour: 8,
           closingHour: 20,
           photo: 0
       },
       validationSchema: Yup.object({
         fullName: Yup.string()
-                  .min(5, 'نام کوتاه است!')
+                  .min(2, 'نام کوتاه است!')
                   .required("فیلد اجباری است"),
         medicId: Yup.number()
                  .required("فیلد اجباری است"),

@@ -1,5 +1,6 @@
 .AboutUsHeaderCard {
     display: flex;
+    position: relative;
     flex-direction: row;
     align-items: center;
     direction: rtl;
@@ -36,12 +37,16 @@
         }
     }
     &__boarding {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        // direction: ltr;
         font-size: 12px;
         background-color: $primary-color;
         border-radius: 5px;
         color: white;
         padding: 0 5px;
-        align-self: flex-start;
+        // align-self: flex-start;
     }
 
 }

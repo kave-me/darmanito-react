@@ -2,6 +2,7 @@ import React, { useState} from "react";
 import navbarListItems from './NavbarNavigationItems'
 import Logo from "./Logo";
 import {useLocation, NavLink} from 'react-router-dom';
+import MainDownloadModal from "./MainDownloadModal";
 
 const Navbar = () => {
   const [burger, setBurger] = useState({ isOpen: false });
@@ -17,6 +18,7 @@ const Navbar = () => {
                       : item.active=false;
                        return (item)})
       setLinks(newNavItems)}
+  const [viewModal, setViewModal] = useState(false);
   return (
     <nav className="section navbar">
       <Logo />
@@ -46,7 +48,7 @@ const Navbar = () => {
         </ul>
 
         <div className="navbar__buttonSeparator"></div>
-        <button className="navbar__button">دانلود درمانیتو</button>
+        <button className="navbar__button" onClick={() => setViewModal(true)}>دانلود درمانیتو</button>
       </div>
       <i
         className={
@@ -64,6 +66,9 @@ const Navbar = () => {
         }
         onClick={switchBurger}
       ></i>
+      {viewModal
+       ? <MainDownloadModal click={() => setViewModal(!viewModal)}/>
+       : null}
     </nav>
   );
 };

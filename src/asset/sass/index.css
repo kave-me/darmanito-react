@@ -992,6 +992,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  position: relative;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1045,13 +1046,14 @@ p {
 }
 
 .AboutUsHeaderCard__boarding {
+  position: absolute;
+  top: 20px;
+  left: 20px;
   font-size: 12px;
   background-color: #1894ff;
   border-radius: 5px;
   color: white;
   padding: 0 5px;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
 }
 
 .aboutUsStatics {
@@ -1778,6 +1780,140 @@ p {
   }
 }
 
+.mainDownloadModal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(102, 102, 102, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainDownloadModal__card {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainDownloadModal__card__img {
+  width: 150px;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+}
+
+.mainDownloadModal__card__title {
+  font-size: 1.2rem;
+  color: #00DE9A;
+  text-align: center;
+}
+
+.mainDownloadModal__card__desc {
+  color: #666666;
+  font-size: .95rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainDownloadModal__card__button {
+  width: 80%;
+  height: 2.5rem;
+  background-color: #1894ff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
+.mainDownloadModal {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: rgba(102, 102, 102, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainDownloadModal__card {
+  width: 400px;
+  height: 400px;
+  background-color: white;
+  border-radius: 20px;
+  padding: 50px;
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mainDownloadModal__card__img {
+  width: 150px;
+  height: auto;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 2rem;
+}
+
+.mainDownloadModal__card__title {
+  font-size: 1.2rem;
+  color: #00DE9A;
+  text-align: center;
+}
+
+.mainDownloadModal__card__desc {
+  color: #666666;
+  font-size: .95rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.mainDownloadModal__card__button {
+  width: 80%;
+  height: 2.5rem;
+  background-color: #1894ff;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+
 .mainRegisterContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2279,6 +2415,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  direction: ltr;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;

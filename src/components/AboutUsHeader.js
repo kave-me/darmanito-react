@@ -2,6 +2,7 @@ import React from 'react';
 import shortid from 'shortid'
 import AboutUsHeaderCard from './AboutUsHeaderCard';
 
+
 const headerCards = [
     {
         name: 'نام داروخانه شما',
@@ -39,15 +40,12 @@ const AboutUsHeader = () => {
             </div>
             <div className="aboutUs__header__icons">
                 <div className="aboutUs__header__icons__icon">
-                    {headerCards.map((item) => <AboutUsHeaderCard
-                                                name={item.name}
-                                                address={item.address}
-                                                img={item.img}
-                                                isBoarding={item.isBoarding}
-                                                key={item.id}/>)}
-
-
-                    
+                        {headerCards.map((item) => <AboutUsHeaderCard
+                                                    name={item.name}
+                                                    address={item.address}
+                                                    img={item.img}
+                                                    isBoarding={item.isBoarding}
+                                                    key={item.id}/>)}
                 </div>
             </div>
         </div>

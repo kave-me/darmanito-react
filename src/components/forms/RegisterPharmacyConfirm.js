@@ -1,8 +1,10 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Card from '../AboutUsHeaderCard';
 import shortid from 'shortid';
+import RegisterModal from '../RegisterModal';
 
 const RegisterPharmacyConfirm = (props) => {
+    const [viewModal, setViewModal] = useState(false);
     return(
         <div className="RegisterPharmacyThirdFormContainer">
             <div className="RegisterPharmacyThirdFormContainer__cards">
@@ -76,10 +78,13 @@ const RegisterPharmacyConfirm = (props) => {
                     <button className="RegisterPharmacyThirdFormContainer__preview__form__buttons__edit"
                     type="button" onClick={props.stepZero}>ویراش اطلاعات</button>
                     <button className="RegisterPharmacyThirdFormContainer__preview__form__buttons__submit"
-                    type="submit" >تکمیل ثبت نام</button>
+                    type="button" onClick={() => setViewModal(true)} >تکمیل ثبت نام</button>
                 </div>
                 </form>
             </div>
+            {viewModal
+             ? <RegisterModal click={() => setViewModal(!viewModal)}/>
+             : null}
         
         </div>
 
