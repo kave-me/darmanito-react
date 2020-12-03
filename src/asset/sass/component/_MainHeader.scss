@@ -36,8 +36,12 @@
                 border-radius: 10px;
                 cursor: pointer;
                 margin: 4rem 1rem 0 1rem;
-
             }
+            &__register *{
+                text-decoration: none;
+                color: $primary-color;
+            }
+
         }
     }
     &__image {

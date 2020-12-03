@@ -1256,6 +1256,11 @@ p {
   margin: 4rem 1rem 0 1rem;
 }
 
+.mainHeader__textAndButtons__buttons__register * {
+  text-decoration: none;
+  color: #1894ff;
+}
+
 .mainHeader__image {
   width: 400px;
 }
