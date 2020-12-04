@@ -102,6 +102,7 @@
     font-size: 1.2rem;
     align-items: flex-end;
     justify-content: flex-start;
+    z-index: 1000;
   }
   .navbar__content__active {
     transform: translateX(0%);
