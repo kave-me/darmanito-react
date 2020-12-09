@@ -36,16 +36,17 @@
     {
         grid-area: mainAbout-iconAndText;
         display: flex;
-        justify-content: space-between;
+        // justify-content: space-between;
         margin-top: 10%;
         &__icon {
+            margin: 0px 2rem;
             &__image {
-                width: 100px;
-                height: 100px;
-                padding: 30px;
+                width: 80px;
+                height: 80px;
+                padding: 20px;
                 margin:10px;
-                border-radius: 10px;
-                box-shadow: 0 0 10px rgba($primary-color, .3);
+                border-radius: 15px;
+                box-shadow: 0 0 20px rgba($primary-color, .3);
             }
             &__text {
                 font-size: 14px;

@@ -63,13 +63,11 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-top: 10%;
 }
 
 .mainAbout__icons__icon {
+  margin: 0px 2rem;
   width: 100px;
   height: 100px;
   display: -webkit-box;
@@ -88,13 +86,13 @@
 }
 
 .mainAbout__icons__icon__image {
-  width: 100px;
-  height: 100px;
-  padding: 30px;
+  width: 80px;
+  height: 80px;
+  padding: 20px;
   margin: 10px;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 10px rgba(24, 148, 255, 0.3);
-          box-shadow: 0 0 10px rgba(24, 148, 255, 0.3);
+  border-radius: 15px;
+  -webkit-box-shadow: 0 0 20px rgba(24, 148, 255, 0.3);
+          box-shadow: 0 0 20px rgba(24, 148, 255, 0.3);
 }
 
 .mainAbout__icons__icon__text {
