@@ -1,0 +1,131 @@
+@import '../../../asset/sass/base/colors';
+
+
+.footer {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+.footer__branding {
+    align-self: auto;
+}
+.footer__download {
+    align-self: auto;
+    direction: rtl;
+    line-height: 3rem;
+}
+.footer__download__title {
+    margin-bottom: 1rem;
+}
+.footer__download__icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.footer__services {
+    align-self: auto;
+    line-height: 3rem;
+    direction: rtl;
+}
+.footer__services__items {
+    list-style: none;
+}
+.footer__services__items__item {
+    color: $dark-color;
+    cursor: pointer;
+}
+// .footer__pages__items__item:hover,
+// .footer__services__items__item:hover {
+//     font-weight: bold;
+//     border-right: 4px solid $secondary-color;
+//     color: $tertiary-color;
+//     padding-right: .5rem;
+//     transition: .3s ease;
+// }
+
+.footer__pages {
+    direction: rtl;
+    align-self: auto;
+    line-height: 3rem;
+}
+.footer__pages__items {
+    list-style: none;
+}
+// .footer__pages__items__item {
+//     color: $dark-color;
+//     cursor: pointer;
+// }
+
+.footer__services__items__item__a {
+    
+    text-decoration: none;
+    color: $dark-color;
+    cursor: pointer;
+}
+.footer__pages__items__item__a:hover,
+.footer__services__items__item__a:hover {
+    font-weight: bold;
+    border-right: 4px solid $secondary-color;
+    color: $tertiary-color;
+    padding-right: .5rem;
+    transition: .3s ease;
+}
+.footer__branding__copyright {
+    direction: rtl;
+    margin-bottom: 3rem;
+}
+.footer__branding__title{
+    direction: rtl;
+    margin-top: 3rem;
+}
+
+.footer__branding__socialNetwork {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.footer__branding__socialNetwork__instagram,
+.footer__branding__socialNetwork__twitter,
+.footer__branding__socialNetwork__linkedin {
+    font-size: 24px;
+    height: auto;
+    color: $dark-color;
+    cursor: pointer;
+    margin: .5rem;
+}
+.footer__branding__socialNetwork__instagram:hover,
+.footer__branding__socialNetwork__twitter:hover,
+.footer__branding__socialNetwork__linkedin:hover {
+    color: $primary-color;
+    transition: 0.4s;
+}
+
+@media screen and(max-width:1100px)
+{
+    .footer__download {
+        display: none;
+    }
+}
+@media screen and(max-width:700px)
+{
+    .footer__download,
+    .footer__pages,
+    .footer__services {
+        display: none;
+    }
+    .footer .logo {
+        justify-content: center;
+        justify-items: center;
+        text-align: right;
+    }
+    .footer,
+    .footer__branding__title,
+    .footer__branding__copyright,
+    .footer__branding__socialNetwork {
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+}

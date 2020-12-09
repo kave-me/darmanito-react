@@ -3,3 +3,12 @@ $secondary-color: #00DE9A;
 $tertiary-color: #2361B5;
 $background-color: #E6F3FF;
 $dark-color: #666666;
+$border-color: rgb(214, 213, 213);
+
+.inputError {
+    border: 2px solid red !important;
+    &__message{
+        height: 1rem;
+        color: red;
+    }
+}

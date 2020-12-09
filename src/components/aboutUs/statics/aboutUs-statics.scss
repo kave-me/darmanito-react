@@ -1,0 +1,28 @@
+@import '../../../asset/sass/base/colors';
+
+.aboutUsStatics {
+    height: 130px;
+    background-color: $primary-color;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    direction: rtl;
+    &__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__number {
+            direction: ltr;
+            font-size: 36px;
+        }
+    }
+}
+@media screen and (max-width: 700px) {
+    .aboutUsStatics {
+        flex-direction: column;
+        height: auto;
+        row-gap: 2rem;
+    }
+}

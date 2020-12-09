@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/AboutUsHeader';
-import Statics from '../components/AboutUsStatics';
-import Services from '../components/AboutUsServices';
-import Support from '../components/Support';
-import Footer from '../components/Footer';
+import Header from '../components/aboutUs/header';
+import Statics from '../components/aboutUs/statics';
+import Services from '../components/aboutUs/services';
+import Support from '../components/base/support';
+import Footer from '../components/base/footer';
 
 
 const AboutUs = () => {

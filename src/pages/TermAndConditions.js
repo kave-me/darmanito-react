@@ -1,8 +1,8 @@
 import React from 'react';
-import TextBanner from '../components/TextBanner';
-import Support from '../components/Support';
-import Footer from '../components/Footer';
-import TermAndConditionsList from '../components/TermAndConditionsList';
+import TextBanner from '../components/base/text-banner';
+import Support from '../components/base/support';
+import Footer from '../components/base/footer';
+import TermAndConditionsList from '../components/term-and-conditions';
 
 
 const TermAndConditions = () => {

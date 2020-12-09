@@ -1,0 +1,101 @@
+@import '../../../asset/sass/base/colors';
+
+.mainRegisterContainer {
+display: flex;
+padding: 1% 5% 1% 5%;
+margin: 4rem 0;
+justify-content: center;
+}
+.mainRegister {
+    display: flex;
+    justify-content: space-around;
+    width: 95%;
+    height: 400px;
+    box-shadow: 0 0 20px rgba($primary-color, .2);
+    border-radius: 20px;
+    &__img {
+        width: 30%;
+        height: auto;
+        align-self: flex-end;
+    }
+    &__info {
+        direction: rtl;
+        align-self: center;
+        width: 60%;
+        &__title {
+            color: $tertiary-color;
+            border-right: 4px solid $secondary-color;
+            padding-right: 2rem;
+            margin-bottom: 3rem;
+        }
+        &__description {
+            margin-bottom: 3rem;
+        }
+        &__input {
+            background-color: whitesmoke;
+            width: 500px;
+            height: 3.5rem;
+            border-radius: 10px;
+            border: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            &__input {
+                width: 300px;
+                height: 2.5rem;
+                background-color: whitesmoke;
+                border: none;
+            }
+            &__input:focus {
+                outline: none;
+            }
+            &__button {
+                width: 6rem;
+                height: 2.8rem;
+                background-color: $primary-color;
+                color: white;
+                font-size: 1rem;
+                cursor: pointer;
+                border: none;
+                border-radius: 10px;
+            }
+            &__button:focus {
+                outline: none;
+            }
+
+        }
+    }
+
+}
+@media screen and (max-width: 768px) {
+    .mainRegister {
+        display: flex;
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 1rem;
+        &__img {
+            width: 50%;
+            height: auto;
+            align-self: center;
+            margin-bottom: 1rem;
+        }
+        &__info {
+            width: 70%;
+            &__title {
+                height: 2rem;
+                margin-bottom: 3rem;
+                font-size: 1.2rem;
+            }
+            &__description {
+                margin-top: 2rem;
+            }
+            &__input {
+                width: 95%;
+                &__input {
+                    width: 90%;
+                }
+            }
+        }
+    }
+}

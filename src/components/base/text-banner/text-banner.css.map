@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,gBAAgB,ECNJ,OAAO;EDOnB,KAAK,EAAE,KAAK;EACZ,UAAU,EAAE,MAAM;EAClB,MAAM,EAAE,KAAK;CAChB;;AACD,AAAA,iBAAiB,CAAC;EACd,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "text-banner.scss",
+        "../../../asset/sass/base/_colors.scss"
+    ],
+    "names": [],
+    "file": "text-banner.css"
+}

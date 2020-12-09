@@ -1,0 +1,14 @@
+@import '../../../asset/sass/base/colors';
+
+.textBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $primary-color;
+    color: white;
+    text-align: center;
+    height: 120px;
+}
+.textBanner__text {
+    margin: auto;
+}

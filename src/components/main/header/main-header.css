@@ -1,0 +1,103 @@
+.mainHeader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  direction: rtl;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+.mainHeader__textAndButtons__title {
+  color: #1894ff;
+}
+
+.mainHeader__textAndButtons__description {
+  color: #666666;
+}
+
+.mainHeader__textAndButtons__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mainHeader__textAndButtons__buttons__download {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 150px;
+  height: 3rem;
+  background-color: #1894ff;
+  border: 2px solid #1894ff;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4rem 1rem 0 1rem;
+}
+
+.mainHeader__textAndButtons__buttons__register {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 150px;
+  height: 3rem;
+  background-color: white;
+  border: 2px solid #1894ff;
+  color: #1894ff;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 4rem 1rem 0 1rem;
+}
+
+.mainHeader__textAndButtons__buttons__register * {
+  text-decoration: none;
+  color: #1894ff;
+}
+
+.mainHeader__image {
+  width: 400px;
+}
+
+@media screen and (max-width: 780px) {
+  .mainHeader {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    width: 100%;
+  }
+  .mainHeader__image {
+    width: 70%;
+  }
+  .mainHeader__textAndButtons {
+    width: 70%;
+  }
+  .mainHeader__textAndButtons__title, .mainHeader__textAndButtons__description {
+    text-align: center;
+  }
+  .mainHeader__textAndButtons__buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 1rem;
+  }
+  .mainHeader__textAndButtons__buttons__download, .mainHeader__textAndButtons__buttons__register {
+    margin: 1rem;
+  }
+}
+/*# sourceMappingURL=main-header.css.map */

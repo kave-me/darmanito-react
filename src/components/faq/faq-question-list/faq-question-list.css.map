@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,yBAAyB,CAAC;EACtB,MAAM,EAAE,MAAM;CACjB",
+    "sources": [
+        "faq-question-list.scss",
+        "../../../asset/sass/base/_colors.scss"
+    ],
+    "names": [],
+    "file": "faq-question-list.css"
+}

@@ -1,12 +1,16 @@
 import React from 'react';
-import RegisterPharmacyForm from '../components/RegisterPharmacyForm';
+import RegisterForm from '../components/register';
+import Footer from '../components/base/footer';
+import Support from '../components/base/support';
 
 const RegisterPharmacy = () => {
     return (
         <div className="RegisterPharmacyContainer">
             <div className="RegisterPharmacy section">
-            <RegisterPharmacyForm/>
+            <RegisterForm/>
             </div>
+            <Support/>
+            <Footer/>
         </div>
     );
 }
