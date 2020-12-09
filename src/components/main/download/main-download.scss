@@ -67,6 +67,9 @@
 
     }
 }
+.inputError__message {
+    height: 3rem !important;
+}
 @media screen and (max-width: 868px) {
     .mainDownload {
         flex-direction: column;
@@ -89,6 +92,9 @@
 
             }
         }
+    }
+    .inputError__message {
+        height: 2.2rem !important;
     }
     
 }
