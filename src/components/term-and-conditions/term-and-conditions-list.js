@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import TermAndConditionsIcon from './term-and-conditions-icon'
 import shortid from 'shortid';
 import {description1, description2, description3, description4} from './term-and-conditions-descriptions.js';
-add import './term-and-conditions-list.scss';
+import './term-and-conditions-list.scss';
 
 
 const TermAndConditionsList = () => {
