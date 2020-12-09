@@ -1,8 +1,8 @@
 import React from 'react';
-import TextBanner from '../components/TextBanner'
-import Support from '../components/Support'
-import Footer from '../components/Footer'
-import SimpleMap from '../components/Map'
+import TextBanner from '../components/base/text-banner';
+import Support from '../components/base/support';
+import Footer from '../components/base/footer';
+import SimpleMap from '../components/contactUs/map';
 
 const ContactUs = () => {
     return (

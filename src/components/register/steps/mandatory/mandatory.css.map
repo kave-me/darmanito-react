@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,uCAAuC,CAAC;EACpC,OAAO,EAAE,IAAI;CAkBhB;;AAjBI,AAAD,6CAAO,CAAC;EACJ,OAAO,EAAE,IAAI;CAChB;;AACA,AAAD,8CAAQ,CAAC;EACL,gBAAgB,ECLL,OAAO;EDMlB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,IAAI;EACb,cAAc,EAAE,MAAM;EACtB,eAAe,EAAE,MAAM;EACvB,WAAW,EAAE,MAAM;EACnB,OAAO,EAAE,QAAQ;CACpB",
+    "sources": [
+        "mandatory.scss",
+        "../../../../asset/sass/base/_colors.scss"
+    ],
+    "names": [],
+    "file": "mandatory.css"
+}

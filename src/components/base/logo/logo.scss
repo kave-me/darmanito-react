@@ -1,0 +1,24 @@
+@import '../../../asset/sass/base/colors';
+
+.logo {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+.logo__img {
+    width: 55px;
+    height: 53px;
+    margin-left: 0.3rem;
+}
+.logo__text {
+    direction: rtl;
+}
+.logo__text__head {
+    padding: 0;
+    margin: 0;
+}
+.logo__text__body {
+    padding: 0;
+    margin: 0;
+
+}

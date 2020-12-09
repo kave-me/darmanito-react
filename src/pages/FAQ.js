@@ -1,9 +1,9 @@
 import React from 'react';
-import TextBanner from '../components/TextBanner';
-import Footer from '../components/Footer';
-import Support from '../components/Support';
-import FaqIconList from '../components/FaqIconList';
-import FaqQuestionList from '../components/FaqQuestionList';
+import TextBanner from '../components/base/text-banner';
+import Footer from '../components/base/footer';
+import Support from '../components/base/support';
+import FaqIconList from '../components/faq/faq-icon-list';
+import FaqQuestionList from '../components/faq/faq-question-list';
 
 
 

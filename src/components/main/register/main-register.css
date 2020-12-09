@@ -1,0 +1,132 @@
+.mainRegisterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1% 5% 1% 5%;
+  margin: 4rem 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mainRegister {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 95%;
+  height: 400px;
+  -webkit-box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
+          box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
+  border-radius: 20px;
+}
+
+.mainRegister__img {
+  width: 30%;
+  height: auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mainRegister__info {
+  direction: rtl;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  width: 60%;
+}
+
+.mainRegister__info__title {
+  color: #2361B5;
+  border-right: 4px solid #00DE9A;
+  padding-right: 2rem;
+  margin-bottom: 3rem;
+}
+
+.mainRegister__info__description {
+  margin-bottom: 3rem;
+}
+
+.mainRegister__info__input {
+  background-color: whitesmoke;
+  width: 500px;
+  height: 3.5rem;
+  border-radius: 10px;
+  border: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mainRegister__info__input__input {
+  width: 300px;
+  height: 2.5rem;
+  background-color: whitesmoke;
+  border: none;
+}
+
+.mainRegister__info__input__input:focus {
+  outline: none;
+}
+
+.mainRegister__info__input__button {
+  width: 6rem;
+  height: 2.8rem;
+  background-color: #1894ff;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.mainRegister__info__input__button:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  .mainRegister {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 1rem;
+  }
+  .mainRegister__img {
+    width: 50%;
+    height: auto;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 1rem;
+  }
+  .mainRegister__info {
+    width: 70%;
+  }
+  .mainRegister__info__title {
+    height: 2rem;
+    margin-bottom: 3rem;
+    font-size: 1.2rem;
+  }
+  .mainRegister__info__description {
+    margin-top: 2rem;
+  }
+  .mainRegister__info__input {
+    width: 95%;
+  }
+  .mainRegister__info__input__input {
+    width: 90%;
+  }
+}
+/*# sourceMappingURL=main-register.css.map */

@@ -5,7 +5,7 @@ import ContactUs from './pages/ContactUs';
 import FAQ from './pages/FAQ';
 import RegisterPharmacy from './pages/RegisterPharmacy';
 import TermAndConditions from './pages/TermAndConditions';
-import Navbar from './components/Navbar';
+import Navbar from './components/base/navbar';
 import {Route, Switch} from 'react-router-dom';
 
 function App() {

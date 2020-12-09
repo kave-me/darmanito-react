@@ -1,11 +1,11 @@
 import React from 'react';
-import MainHeader from '../components/MainHeader';
-import MainAbout from '../components/MainAbout';
-import MainFeatures from '../components/MainFeatures';
-import MainDownload from '../components/MainDownload';
-import MainRegister from '../components/MainRegister';
-import Support from '../components/Support';
-import Footer from '../components/Footer';
+import MainHeader from '../components/main/header';
+import MainAbout from '../components/main/about';
+import MainFeatures from '../components/main/features';
+import MainDownload from '../components/main/download';
+import MainRegister from '../components/main/register';
+import Support from '../components/base/support';
+import Footer from '../components/base/footer';
 
 const Main = () => {
     return (

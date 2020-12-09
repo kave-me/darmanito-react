@@ -1,0 +1,131 @@
+.mainDownloadContainer {
+  background-color: #1894ff;
+  padding: 1% 5% 0 5%;
+  margin: 4rem 0;
+}
+
+.mainDownload {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  direction: rtl;
+}
+
+.mainDownload__img {
+  width: auto;
+  height: 400px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.mainDownload__info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.mainDownload__info__title {
+  color: white;
+}
+
+.mainDownload__info__description {
+  color: white;
+  margin: 1rem 0 2rem 0;
+}
+
+.mainDownload__info__input {
+  background-color: whitesmoke;
+  width: 450px;
+  height: 3rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem 0 2rem 0;
+}
+
+.mainDownload__info__input__input {
+  width: 300px;
+  height: 2.5rem;
+  border: none;
+  background-color: whitesmoke;
+}
+
+.mainDownload__info__input__input:focus {
+  outline: none;
+}
+
+.mainDownload__info__input__button {
+  width: 6rem;
+  height: 2.5rem;
+  background-color: #1894ff;
+  color: white;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.mainDownload__info__input__button:focus {
+  outline: none;
+}
+
+.mainDownload__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  gap: 1rem;
+}
+
+@media screen and (max-width: 868px) {
+  .mainDownload {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mainDownload__icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .mainDownload__img {
+    margin-top: 3rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .mainDownload__info__input {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .mainDownload__info__input__input {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=main-download.css.map */
