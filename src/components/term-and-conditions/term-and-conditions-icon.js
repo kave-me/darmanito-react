@@ -1,4 +1,5 @@
 import React from 'react';
+import './term-and-conditions-icon.scss';
 
 const TermAndConditionsIcon = (props) => {
     return (

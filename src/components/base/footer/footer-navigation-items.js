@@ -3,13 +3,13 @@ import NavbarNavigationItems from '../navbar/NavbarNavigationItems'
 const footerPages = [...NavbarNavigationItems];
 const footerServices = [
     {
-        title: "داروخانه آنلاین",
-        href: "#online-pharmacy",
+        title: "سوالات متداول",
+        href: "/faq",
         active: false
     },
     {
-        title: "فروشگاه آنلاین",
-        href: "#online-market",
+        title: "قوانین و شرایط",
+        href: "/termandconditions",
         active: false
     },
     {

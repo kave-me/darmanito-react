@@ -5,6 +5,7 @@ import marketIcon from '../../../asset/image/market.svg';
 import pharmacyIcon from '../../../asset/image/pharmacy.svg';
 import scheduleIcon from '../../../asset/image/schedule.svg';
 import stethoscopeIcon from '../../../asset/image/stethoscope.svg';
+import './faq-icon-list.scss';
 
 
 const FaqIconList = () => {
