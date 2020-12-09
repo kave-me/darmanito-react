@@ -1,25 +1,62 @@
-import React from 'react';
+import React, {useState} from 'react';
 import TextBanner from '../components/base/text-banner';
 import Support from '../components/base/support';
 import Footer from '../components/base/footer';
 import SimpleMap from '../components/contactUs/map';
+import {useFormik} from 'formik';
+import * as Yup from 'yup';
+import './contactUs.scss';
+import RegisterModal from '../components/base/modal/contactUs-modal';
+
 
 const ContactUs = () => {
+    const formik = useFormik(
+        {
+            initialValues: {
+                fullName: "",
+                emailAndPhone: "",
+                message: ""
+            },
+            validationSchema:  Yup.object({
+                fullName:
+                    Yup.string()
+                    .required("فیلد اجباری"),
+                emailAndPhone:
+                    Yup.string()
+                    .required("فیلد اجباری"),
+                message:
+                    Yup.string()
+                    .required("فیلد اجباری"),
+            })
+        }
+    );
+    const [viewModal, setViewModal] = useState(false);
     return (
         <div className="container">
+                        {viewModal
+             ? <RegisterModal click={() => setViewModal(!viewModal)}/>
+             : null}
             <TextBanner text="تماس با ما"/>
             <div className="contactUsFormAndMap section">
                 <div className="messageForm">
                     <form className="messageForm__form">
-                        <label className="messageForm__form__label" htmlFor="fullname">نام و نام خانوادگی</label>
-                        <input className="messageForm__form__input" id="fullname" name="fullname" type="text" placeholder="نام و نام خانوادگی"/>
+                        <label className="messageForm__form__label" htmlFor="fullName">نام و نام خانوادگی</label>
+                        <input className="messageForm__form__input" id="fullName" name="fullName" type="text" placeholder="نام و نام خانوادگی"
+                        onChange={formik.handleChange}/>
+                        <p className="inputError__message">{formik.errors.fullName}</p>
+
                         <label className="messageForm__form__label" htmlFor="emailAndPhone">ایمیل یا شماره همراه</label>
-                        <input className="messageForm__form__input" id="emailAndPhone" type="text" placeholder="ایمیل یا شماره همراه"/>
+                        <input className="messageForm__form__input" id="emailAndPhone" type="text" placeholder="ایمیل یا شماره همراه"
+                        onChange={formik.handleChange} name="emailAndPhone"/>
+                        <p className="inputError__message">{formik.errors.emailAndPhone}</p>
+
 
                         <label className="messageForm__form__label" htmlFor="message">پیام شما</label>
-                        <textarea className="messageForm__form__textarea" name="name is here" id="message" cols="30" rows="9" placeholder="متن پیام"></textarea>
+                        <textarea className="messageForm__form__textarea" name="message" id="message" cols="30" rows="9" placeholder="متن پیام"
+                        onChange={formik.handleChange}></textarea>
+                        <p className="inputError__message">{formik.errors.message}</p>
 
-                        <button className="messageForm__form__button">ارسال پیام</button>
+                        <button type="button" className="messageForm__form__button" onClick={() => setViewModal(true)}>ارسال پیام</button>
                     </form>
                 </div>
                 <div className="contactUS__map"> 
@@ -46,6 +83,7 @@ const ContactUs = () => {
             </div>
             <Support/>
             <Footer/>
+
         </div>
     );
 }

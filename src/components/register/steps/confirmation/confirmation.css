@@ -1,0 +1,112 @@
+.inputError {
+  border: 2px solid red !important;
+}
+
+.inputError__message {
+  height: 1rem;
+  color: red;
+}
+
+.RegisterPharmacyConfirmation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyConfirmation__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  background-color: #E6F3FF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegisterPharmacyConfirmation__preview {
+  direction: rtl;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 50%;
+}
+
+.RegisterPharmacyConfirmation__preview__placeName, .RegisterPharmacyConfirmation__preview__placePhone, .RegisterPharmacyConfirmation__preview__city, .RegisterPharmacyConfirmation__preview__district, .RegisterPharmacyConfirmation__preview__workingHours {
+  width: 30%;
+  margin-top: 1rem;
+}
+
+.RegisterPharmacyConfirmation__preview__fullAddress {
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.RegisterPharmacyConfirmation__preview__line {
+  width: 80%;
+  height: 1px;
+  background-color: #d6d5d5;
+}
+
+.RegisterPharmacyConfirmation__preview__medicId, .RegisterPharmacyConfirmation__preview__fullName {
+  width: 50%;
+}
+
+.RegisterPharmacyConfirmation__preview__form__buttons {
+  margin-top: 2rem;
+}
+
+.RegisterPharmacyConfirmation__preview__form__buttons__edit {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 7rem;
+  height: 2.5rem;
+  outline: none;
+  border-radius: 10px;
+  background-color: white;
+  color: #1894ff;
+  border: 2px solid #1894ff;
+  margin: 1rem;
+}
+
+.RegisterPharmacyConfirmation__preview__form__buttons__submit {
+  font-weight: bold;
+  font-size: 1rem;
+  width: 7rem;
+  height: 2.5rem;
+  outline: none;
+  border-radius: 10px;
+  background-color: #1894ff;
+  color: white;
+  border: 2px solid #1894ff;
+  margin: 1rem;
+}
+
+@media screen and (max-width: 930px) {
+  .RegisterPharmacyConfirmation {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .RegisterPharmacyConfirmation__cards {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .RegisterPharmacyConfirmation__cards div:not(:first-child) {
+    display: none;
+  }
+  .RegisterPharmacyConfirmation__preview {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=confirmation.css.map */

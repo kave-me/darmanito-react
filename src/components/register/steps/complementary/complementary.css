@@ -1,0 +1,156 @@
+.inputError {
+  border: 2px solid red !important;
+}
+
+.inputError__message {
+  height: 1rem;
+  color: red;
+}
+
+.RegisterPharmacyComplementaryFormContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyComplementaryFormContainer__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
+  background-color: #E6F3FF;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form {
+  direction: rtl;
+  padding: 1rem;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__city, .RegisterPharmacyComplementaryFormContainer__form__district, .RegisterPharmacyComplementaryFormContainer__form__address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__city__input, .RegisterPharmacyComplementaryFormContainer__form__district__input, .RegisterPharmacyComplementaryFormContainer__form__address__input {
+  height: 2.5rem;
+  width: 80%;
+  outline: none;
+  border-radius: 10px;
+  border: 2px solid #d6d5d5;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__city__input:focus, .RegisterPharmacyComplementaryFormContainer__form__district__input:focus, .RegisterPharmacyComplementaryFormContainer__form__address__input:focus {
+  border: 2px solid #1894ff;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__workingHour {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__workingHour__box {
+  margin: 1rem;
+  border: 1px solid #d6d5d5;
+  width: 7rem;
+  height: 2.5rem;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__workingHour label {
+  margin-left: .5rem;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__workingHourDuration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__workingHourDuration__input {
+  margin: 0px 1rem;
+  width: 7rem;
+  height: 2.5rem;
+  border: 2px solid #d6d5d5;
+  border-radius: 10px;
+  outline: none;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__workingHourDuration__input:focus {
+  border: 2px solid #1894ff;
+}
+
+.RegisterPharmacyComplementaryFormContainer__form__button {
+  height: 3rem;
+  width: 7rem;
+  background-color: #1894ff;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 930px) {
+  .RegisterPharmacyComplementaryFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .RegisterPharmacyComplementaryFormContainer__cards {
+    width: 100%;
+  }
+  .RegisterPharmacyComplementaryFormContainer__cards div:not(:first-child) {
+    display: none;
+  }
+  .RegisterPharmacyComplementaryFormContainer__form {
+    width: 100%;
+  }
+  .RegisterPharmacyComplementaryFormContainer__form__head {
+    display: none;
+  }
+  .RegisterPharmacyComplementaryFormContainer__form__city__input, .RegisterPharmacyComplementaryFormContainer__form__district__input, .RegisterPharmacyComplementaryFormContainer__form__address__input {
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=complementary.css.map */

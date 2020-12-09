@@ -1,10 +1,13 @@
-.RegisterPharmacyMandatoryFormContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.inputError {
+  border: 2px solid red !important;
 }
 
-.RegisterPharmacyMandatoryFormContainer__head {
+.inputError__message {
+  height: 1rem;
+  color: red;
+}
+
+.RegisterPharmacyMandatoryFormContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12,7 +15,7 @@
 
 .RegisterPharmacyMandatoryFormContainer__cards {
   background-color: #E6F3FF;
-  width: 50vw;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,5 +30,81 @@
       -ms-flex-align: center;
           align-items: center;
   padding: 3rem 0px;
+}
+
+.RegisterPharmacyMandatoryFormContainer__form {
+  width: 50%;
+  direction: rtl;
+  padding: 2rem;
+}
+
+.RegisterPharmacyMandatoryFormContainer__form__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.RegisterPharmacyMandatoryFormContainer__form__fullName, .RegisterPharmacyMandatoryFormContainer__form__medicId, .RegisterPharmacyMandatoryFormContainer__form__placeName, .RegisterPharmacyMandatoryFormContainer__form__placePhone {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem 0px;
+}
+
+.RegisterPharmacyMandatoryFormContainer__form__fullName__input, .RegisterPharmacyMandatoryFormContainer__form__medicId__input, .RegisterPharmacyMandatoryFormContainer__form__placeName__input, .RegisterPharmacyMandatoryFormContainer__form__placePhone__input {
+  height: 2.5rem;
+  border-radius: 10px;
+  border: 2px solid #d6d5d5;
+  outline: none;
+  width: 80%;
+}
+
+.RegisterPharmacyMandatoryFormContainer__form__fullName__input:focus, .RegisterPharmacyMandatoryFormContainer__form__medicId__input:focus, .RegisterPharmacyMandatoryFormContainer__form__placeName__input:focus, .RegisterPharmacyMandatoryFormContainer__form__placePhone__input:focus {
+  border: 2px solid #1894ff;
+}
+
+.RegisterPharmacyMandatoryFormContainer__form__button {
+  height: 3rem;
+  width: 7rem;
+  background-color: #1894ff;
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+@media screen and (max-width: 930px) {
+  .RegisterPharmacyMandatoryFormContainer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .RegisterPharmacyMandatoryFormContainer__cards {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .RegisterPharmacyMandatoryFormContainer__cards div:not(:first-child) {
+    display: none;
+  }
+  .RegisterPharmacyMandatoryFormContainer__form {
+    width: 100%;
+  }
+  .RegisterPharmacyMandatoryFormContainer__form__head {
+    display: none;
+  }
+  .RegisterPharmacyMandatoryFormContainer__form__fullName__input, .RegisterPharmacyMandatoryFormContainer__form__medicId__input, .RegisterPharmacyMandatoryFormContainer__form__placeName__input, .RegisterPharmacyMandatoryFormContainer__form__placePhone__input {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=mandatory.css.map */

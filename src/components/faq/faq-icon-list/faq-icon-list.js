@@ -6,6 +6,8 @@ import pharmacyIcon from '../../../asset/image/pharmacy.svg';
 import scheduleIcon from '../../../asset/image/schedule.svg';
 import stethoscopeIcon from '../../../asset/image/stethoscope.svg';
 import './faq-icon-list.scss';
+// import Slider from 'react-slick';
+
 
 
 const FaqIconList = () => {
@@ -45,8 +47,17 @@ const FaqIconList = () => {
         }
         setIconsState(newStat);
     }
+    // const settings = {
+    //     // dots: true,
+    //     // infinite: true,
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     // vertical: true,
+    //     slidesToScroll: 2
+    //   };
     return(
         <div className="FaqIconListContainer">
+                    {/* <Slider {...settings}> */}
            { iconsStat.map((item) => {
                 return(<FaqIcon
                     img={item.img}
@@ -56,6 +67,7 @@ const FaqIconList = () => {
                     click={()=>activateIcon(item.id)}
                 />);
             })}
+            {/* </Slider> */}
         </div>
     );
 }

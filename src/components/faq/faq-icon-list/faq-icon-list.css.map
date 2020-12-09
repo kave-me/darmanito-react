@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,qBAAqB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,GAAG,EAAE,IAAI;EACT,SAAS,EAAE,IAAI;CAClB",
+    "mappings": "ACOA,AAAA,WAAW,CAAC;EACR,MAAM,EAAE,wBAAwB;CAKnC;;AAJI,AAAD,oBAAU,CAAA;EACN,MAAM,EAAE,IAAI;EACZ,KAAK,EAAE,GAAG;CACb;;ADVL,AAAA,qBAAqB,CAAC;EAClB,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,YAAY;EAC7B,GAAG,EAAE,IAAI;EACT,SAAS,EAAE,IAAI;CAClB",
     "sources": [
         "faq-icon-list.scss",
         "../../../asset/sass/base/_colors.scss"
