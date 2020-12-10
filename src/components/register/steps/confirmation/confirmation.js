@@ -9,20 +9,26 @@ const Confirmation = (props) => {
     return(
         <div className="RegisterPharmacyConfirmation">
             <div className="RegisterPharmacyConfirmation__cards">
-                <Card
-                name= {props.formik.values.fullName}
+            <Card
+                width={100}
+                opacity={1}
+                name= {props.formik.values.placeName}
                 address= {props.formik.values.fullAddress}
                 img= {props.formik.values.photo}
                 isBoarding= {props.formik.values.isBoarding}
                 id= {shortid.generate()}/>
                 <Card
-                name= {props.formik.values.fullName}
+                width={80}
+                opacity={.6}
+                name= {props.formik.values.placeName}
                 address= {props.formik.values.fullAddress}
                 img= {props.formik.values.photo}
                 isBoarding= {props.formik.values.isBoarding}
                 id= {shortid.generate()}/>
                 <Card
-                name= {props.formik.values.fullName}
+                width={75}
+                opacity={.4}
+                name= {props.formik.values.placeName}
                 address= {props.formik.values.fullAddress}
                 img= {props.formik.values.photo}
                 isBoarding= {props.formik.values.isBoarding}

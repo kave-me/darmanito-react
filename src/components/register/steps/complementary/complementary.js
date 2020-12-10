@@ -19,24 +19,30 @@ const Complementary = (props) => {
     return(
         <div className="RegisterPharmacyComplementaryFormContainer">
         <div className="RegisterPharmacyComplementaryFormContainer__cards">
-            <Card
-            name= {props.formik.values.placeName}
-            address= {props.formik.values.fullAddress}
-            img= {props.formik.values.photo}
-            isBoarding= {props.formik.values.isBoarding}
-            id= {shortid.generate()}/>
-            <Card
-            name= {props.formik.values.placeName}
-            address= {props.formik.values.fullAddress}
-            img= {props.formik.values.photo}
-            isBoarding= {props.formik.values.isBoarding}
-            id= {shortid.generate()}/>
-            <Card
-            name= {props.formik.values.placeName}
-            address= {props.formik.values.fullAddress}
-            img= {props.formik.values.photo}
-            isBoarding= {props.formik.values.isBoarding}
-            id= {shortid.generate()}/>
+        <Card
+                width={100}
+                opacity={1}
+                name= {props.formik.values.placeName}
+                address= {props.formik.values.fullAddress}
+                img= {props.formik.values.photo}
+                isBoarding= {props.formik.values.isBoarding}
+                id= {shortid.generate()}/>
+                <Card
+                width={80}
+                opacity={.6}
+                name= {props.formik.values.placeName}
+                address= {props.formik.values.fullAddress}
+                img= {props.formik.values.photo}
+                isBoarding= {props.formik.values.isBoarding}
+                id= {shortid.generate()}/>
+                <Card
+                width={75}
+                opacity={.4}
+                name= {props.formik.values.placeName}
+                address= {props.formik.values.fullAddress}
+                img= {props.formik.values.photo}
+                isBoarding= {props.formik.values.isBoarding}
+                id= {shortid.generate()}/>
         </div>
 
         <form className="RegisterPharmacyComplementaryFormContainer__form">

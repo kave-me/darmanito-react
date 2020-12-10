@@ -10,6 +10,10 @@
         background-color: $background-color;
         justify-content: center;
         align-items: center;
+        & > div:last-child {
+            margin-left: 10%;
+            align-self: flex-start;
+        }
     }
     &__form {
         direction: rtl;
@@ -89,7 +93,7 @@
         &__cards {
             width: 100%;
         }
-        &__cards div:not(:first-child) {
+        &__cards > div:not(:first-child) {
             display: none;
         }
         &__form {

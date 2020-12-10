@@ -11,6 +11,10 @@
         background-color: $background-color;
         justify-content: center;
         align-items: center;
+        & > div:last-child {
+            margin-left: 10%;
+            align-self: flex-start;
+        }
     }
     &__preview {
         direction: rtl;
@@ -76,7 +80,7 @@
             width: 100%;
             margin-top: 2rem;
         }
-        &__cards div:not(:first-child) {
+        &__cards > div:not(:first-child) {
             display: none;
         }
         &__preview {

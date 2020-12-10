@@ -32,6 +32,12 @@
   padding: 3rem 0px;
 }
 
+.RegisterPharmacyMandatoryFormContainer__cards > div:last-child {
+  margin-left: 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .RegisterPharmacyMandatoryFormContainer__form {
   width: 50%;
   direction: rtl;
@@ -94,7 +100,7 @@
     width: 100%;
     margin-top: 2rem;
   }
-  .RegisterPharmacyMandatoryFormContainer__cards div:not(:first-child) {
+  .RegisterPharmacyMandatoryFormContainer__cards > div:not(:first-child) {
     display: none;
   }
   .RegisterPharmacyMandatoryFormContainer__form {

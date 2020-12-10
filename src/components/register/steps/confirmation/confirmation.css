@@ -31,6 +31,12 @@
           align-items: center;
 }
 
+.RegisterPharmacyConfirmation__cards > div:last-child {
+  margin-left: 10%;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
 .RegisterPharmacyConfirmation__preview {
   direction: rtl;
   display: -webkit-box;
@@ -102,7 +108,7 @@
     width: 100%;
     margin-top: 2rem;
   }
-  .RegisterPharmacyConfirmation__cards div:not(:first-child) {
+  .RegisterPharmacyConfirmation__cards > div:not(:first-child) {
     display: none;
   }
   .RegisterPharmacyConfirmation__preview {

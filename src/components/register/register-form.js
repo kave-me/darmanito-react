@@ -13,11 +13,11 @@ const RegisterForm = () => {
     initialValues: {
         fullName: '',
         medicId: '',
-        placeName: '',
+        placeName: 'نام داروخانه شما',
         placePhone: '',
         city: 'Tehran',
         district: 'TehranD1',
-        fullAddress: '',
+        fullAddress: 'درمانیتو - سرویس داروخانه - داروخانه شما',
         isBoarding: true,
         openingHour: 8,
         closingHour: 20,

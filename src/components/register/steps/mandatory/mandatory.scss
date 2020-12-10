@@ -11,6 +11,10 @@
         justify-content: center;
         align-items: center;
         padding: 3rem 0px;
+        & > div:last-child {
+            margin-left: 10%;
+            align-self: flex-start;
+        }
     }
 
     &__form {
@@ -60,7 +64,7 @@
         width: 100%;
         margin-top: 2rem;
     }
-    &__cards div:not(:first-child) {
+    &__cards > div:not(:first-child) {
         display: none;
     }
 
