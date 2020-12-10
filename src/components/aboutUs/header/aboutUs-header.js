@@ -1,7 +1,7 @@
 import React from 'react';
 import Card from './aboutUs-header-card';
-import headerCards from './aboutUs-header-card-list';
 import './aboutUs-header.scss';
+import shortid from 'shortid';
 
 
 
@@ -18,14 +18,36 @@ const Header = () => {
                 </div>
             </div>
             <div className="aboutUs__header__icons">
-                <div className="aboutUs__header__icons__icon">
-                        {headerCards.map((item) => <Card
-                                                    name={item.name}
-                                                    address={item.address}
-                                                    img={item.img}
-                                                    isBoarding={item.isBoarding}
-                                                    key={item.id}/>)}
-                </div>
+                    <div className="aboutUs__header__icons__icon-1">
+                        <Card
+                            opacity={1}
+                            width={100}
+                            name='نام داروخانه شما'
+                            address='درمانیتو - سرویس داروخانه - داروخانه شما'
+                            img={null}
+                            isBoarding={true}
+                            key={shortid.generate()}/>
+                        </div>
+                    <div className="aboutUs__header__icons__icon-2">
+                        <Card
+                            opacity={.6}
+                            width={80}
+                            name='نام داروخانه شما'
+                            address='درمانیتو - سرویس داروخانه - داروخانه شما'
+                            img={null}
+                            isBoarding={true}
+                            key={shortid.generate()}/>
+                        </div>
+                    <div className="aboutUs__header__icons__icon-3">
+                        <Card
+                            opacity={.4}
+                            width={75}
+                            name='نام داروخانه شما'
+                            address='درمانیتو - سرویس داروخانه - داروخانه شما'
+                            img={null}
+                            isBoarding={true}
+                            key={shortid.generate()}/>
+                    </div>
             </div>
         </div>
         );

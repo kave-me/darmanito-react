@@ -8,6 +8,19 @@
         column-gap: 2rem;
         margin-top: 3rem;
         margin-bottom: 7rem;
+        &__icons {
+            display: flex;
+            flex-direction: column;
+            &__icon-1 {
+                align-self: center;
+            }
+            &__icon-2 {
+                align-self: center;
+            }
+            &__icon-3 {
+                align-self: flex-start;
+            }
+        }
         &__textAndInput {
             display: flex;
             flex-direction: column;
@@ -58,13 +71,16 @@
 
     }
 }
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 780px) {
     .aboutUs__header {
         display: flex;
         flex-direction: column-reverse;
         margin: 1.5rem 0;
         &__icons {
             align-self: center;
+            & > div:not(:first-child) {
+                display: none;
+            }
         }
         &__textAndInput {
             width: 95%;
@@ -76,4 +92,5 @@
             }
         }
     }
+
 }
