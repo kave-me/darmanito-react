@@ -24,7 +24,7 @@
           box-shadow: 0 0 20px rgba(24, 148, 255, 0.2);
   width: -webkit-fill-available;
   width: -moz-available;
-  width: fill-available;
+  width: stretch;
   height: 100px;
   margin: 1rem;
   border-radius: 10px;
