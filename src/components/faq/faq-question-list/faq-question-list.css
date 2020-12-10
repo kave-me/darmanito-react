@@ -3,11 +3,17 @@
 }
 
 .inputError__message {
-  height: 1rem;
+  height: 1.3rem !important;
   color: red;
+  font-size: 14px;
+}
+
+.slick-list, .slick-track {
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .faqQuestionListContainer {
-  margin: 4rem 0;
+  margin: 1rem 0;
 }
 /*# sourceMappingURL=faq-question-list.css.map */

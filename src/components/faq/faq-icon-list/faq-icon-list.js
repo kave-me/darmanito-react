@@ -6,7 +6,9 @@ import pharmacyIcon from '../../../asset/image/pharmacy.svg';
 import scheduleIcon from '../../../asset/image/schedule.svg';
 import stethoscopeIcon from '../../../asset/image/stethoscope.svg';
 import './faq-icon-list.scss';
-// import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import Slider from 'react-slick';
 
 
 
@@ -47,27 +49,27 @@ const FaqIconList = () => {
         }
         setIconsState(newStat);
     }
-    // const settings = {
-    //     // dots: true,
-    //     // infinite: true,
-    //     speed: 500,
-    //     slidesToShow: 1,
-    //     // vertical: true,
-    //     slidesToScroll: 2
-    //   };
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 3,
+        // vertical: true,
+        slidesToScroll: 1
+      };
     return(
         <div className="FaqIconListContainer">
-                    {/* <Slider {...settings}> */}
-           { iconsStat.map((item) => {
-                return(<FaqIcon
-                    img={item.img}
-                    text={item.text}
-                    active={item.isActive}
-                    key={shortid.generate()}
-                    click={()=>activateIcon(item.id)}
-                />);
-            })}
-            {/* </Slider> */}
+            <Slider {...settings}>
+                { iconsStat.map((item) => {
+                        return(<FaqIcon
+                            img={item.img}
+                            text={item.text}
+                            active={item.isActive}
+                            key={shortid.generate()}
+                            click={()=>activateIcon(item.id)}
+                        />);
+                    })}
+            </Slider>
         </div>
     );
 }

@@ -95,6 +95,7 @@ const Complementary = (props) => {
                     <label htmlFor="nonBoarding">روزانه</label>
                     <input type='radio' 
                     className="RegisterPharmacyComplementaryFormContainer__form__workingHour__input"
+                    checked={props.formik.values.isBoarding === false}
                     name="isBoarding" value={props.formik.values.isBoarding} id="nonBoarding" onChange={e => props.formik.setFieldValue('isBoarding', false)}/>
                 </div>
 
@@ -103,6 +104,7 @@ const Complementary = (props) => {
                     <label htmlFor="boarding">شبانه روزی</label>
                     <input type='radio'
                     className="RegisterPharmacyComplementaryFormContainer__form__workingHour__input"
+                    checked={props.formik.values.isBoarding === true}
                     name="isBoarding" value={props.formik.values.isBoarding} id="boarding"
                     onChange={e => props.formik.setFieldValue('isBoarding', true)}/>
                 </div>

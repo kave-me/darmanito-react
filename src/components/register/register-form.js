@@ -1,8 +1,5 @@
 import React, {useState} from 'react';
 import {useFormik} from 'formik';
-// import RegisterPharmacy from './forms/register-pharmacy';
-// import RegisterPharmacyDetail from './forms/register-pharmacy-detail';
-// import RegisterPharmacyConfirm from './forms/register-pharmacy-confirm';
 import * as Yup from 'yup';
 import Mandatory from './steps/mandatory';
 import Complementary from './steps/complementary';
@@ -28,11 +25,15 @@ const RegisterForm = () => {
                 .min(2, 'نام کوتاه است!')
                 .required("فیلد اجباری است"),
       medicId: Yup.number()
+               .min(10000000,"فرمت اشتباه است")
+               .max(10000000000000000,"فرمت اشتباه است")
                .typeError("فقط از اعداد استفاده کنید")
                .required("فیلد اجباری است"),
       placeName: Yup.string()
                  .required("فیلد اجباری است"),
       placePhone: Yup.number()
+                  .min(10000000,"فرمت اشتباه است")
+                  .max(10000000000000000,"فرمت اشتباه است")
                   .required("فیلد اجباری است"),
       city: Yup.string()
             .required("فیلد اجباری است"),
@@ -52,6 +53,7 @@ const RegisterForm = () => {
                   .required("فیلد اجباری است"),
     }),
     onSubmit: values => alert(JSON.stringify(values)),
+    validateOnMount: true,
 });
   const [step, setStep] = useState(0);
 
@@ -72,9 +74,6 @@ const RegisterForm = () => {
     step = 0;
     return(setStep(step));
   }
-
-
-
     switch (step) {
       case 0:
         return(<Mandatory
@@ -99,6 +98,5 @@ const RegisterForm = () => {
           prevStep={() => prevStep(step)}/>);
         };
       }
-  
 
 export default RegisterForm;

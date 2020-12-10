@@ -3,12 +3,16 @@ import shortid from 'shortid';
 import Card from '../../../aboutUs/header/aboutUs-header-card';
 import ProgressBar from '../../../base/progress-bar/progress-bar';
 import './mandatory.scss';
-const invalidInput = (error, _class) => {
-    const result = error
+
+const invalidInput = (formik, id, _class) => {
+    
+    const result = formik.errors[id]
                    ? `${_class}  inputError`
                    : _class
-    return(result);
+    return(formik.initialValues[id] !== formik.values[id] ? result: _class);
 }
+const invalidError = (formik, id) =>  formik.values[id] !== formik.initialValues[id]
+
 const isValid = (errors) => {
     return    errors.fullName ? false :
               errors.medicId ? false :
@@ -16,7 +20,6 @@ const isValid = (errors) => {
               true;
 }
 const Mandatory = (props) => {
-
     return(
         <div className="RegisterPharmacyMandatoryFormContainer">
             <div className="RegisterPharmacyMandatoryFormContainer__cards">
@@ -58,35 +61,44 @@ const Mandatory = (props) => {
                     <label className="RegisterPharmacyMandatoryFormContainer__form__fullName__label"
                     htmlFor="fullName">نام و نام خانوادگی موسس</label>
                     <input type="text" onChange={props.formik.handleChange}
-                    className={invalidInput(props.formik.errors.fullName, "RegisterPharmacyMandatoryFormContainer__form__fullName__input")} name="fullName"
+                    className={invalidInput(props.formik, "fullName", "RegisterPharmacyMandatoryFormContainer__form__fullName__input")} name="fullName"
                     value={props.formik.values.fullName}/>
+                    {invalidError(props.formik, "fullName")? 
                     <p className="inputError__message">{props.formik.errors.fullName}</p>
+                    :null}
                 </div>
                 <div className="RegisterPharmacyMandatoryFormContainer__form__medicId">
                     <label className="RegisterPharmacyMandatoryFormContainer__form__medicId__label"
                     htmlFor="medicId">شماره نظام پزشکی</label>
                     <input onChange={props.formik.handleChange}
-                    className={invalidInput(props.formik.errors.medicId ,"RegisterPharmacyMandatoryFormContainer__form__medicId__input")}
+                    className={invalidInput(props.formik, "medicId" ,"RegisterPharmacyMandatoryFormContainer__form__medicId__input")}
                     name="medicId" value={props.formik.values.medicId}/>
+                    {invalidError(props.formik, "medicId")? 
                     <p className="inputError__message">{props.formik.errors.medicId}</p>
+                    :null}
 
                 </div>
                 <div className="RegisterPharmacyMandatoryFormContainer__form__placeName">
                     <label className="RegisterPharmacyMandatoryFormContainer__form__placeName__label"
                     htmlFor="placeName">نام داروخانه / فروشگاه</label>
                     <input onChange={props.formik.handleChange}
-                    className={invalidInput(props.formik.errors.placeName ,"RegisterPharmacyMandatoryFormContainer__form__placeName__input")}
+                    className={invalidInput(props.formik, "placeName" ,"RegisterPharmacyMandatoryFormContainer__form__placeName__input")}
                     name="placeName" value={props.formik.values.placeName}/>
+                    {invalidError(props.formik, "placeName")? 
                     <p className="inputError__message">{props.formik.errors.placeName}</p>
+                    :null}
 
                 </div>
                 <div className="RegisterPharmacyMandatoryFormContainer__form__placePhone">
                     <label className="RegisterPharmacyMandatoryFormContainer__form__placePhone__label"
                     htmlFor="placePhone">شماره داروخانه</label>
                     <input onChange={props.formik.handleChange}
-                    className={invalidInput(props.formik.errors.placePhone ,"RegisterPharmacyMandatoryFormContainer__form__placePhone__input")}
+                    className={invalidInput(props.formik, "placePhone" ,"RegisterPharmacyMandatoryFormContainer__form__placePhone__input")}
                     name="placePhone" value={props.formik.values.placePhone}/>
+                    {invalidError(props.formik, "placePhone")? 
                     <p className="inputError__message">{props.formik.errors.placePhone}</p>
+                    : null
+                    }
 
                 </div>
             <button className="RegisterPharmacyMandatoryFormContainer__form__button" onClick={props.nextStep}
