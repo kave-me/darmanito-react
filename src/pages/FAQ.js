@@ -10,7 +10,6 @@ import TextBanner from '../components/base/text-banner';
 import Footer from '../components/base/footer';
 import Support from '../components/base/support';
 
-
 const FAQ = (props) =>{
     const settings = {
         infinite: true,
@@ -23,7 +22,6 @@ const FAQ = (props) =>{
         <TextBanner text="سوالات متداول"/>
         <div className={style.FAQ}>
 
-            
             <div className={style.title} style={{marginTop:"2rem"}}>سوال شما درباره کدوم سرویس هست ؟</div>
         <div className="section">
 
@@ -36,7 +34,6 @@ const FAQ = (props) =>{
                 <Card pic={ear} name="ویزیت آنلاین" />
                 </Slider>
         </div>
-
 
         <FaqQuestionList/>
         </div>
