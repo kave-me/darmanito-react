@@ -4,6 +4,7 @@ import Logo from '../logo';
 import {footerPages, footerServices} from './footer-navigation-items';
 import BazarDownloadButton from '../../base/button/bazar';
 import SibAppDownloadButton from '../../base/button/sibApp';
+import {Link} from 'react-router-dom';
 
 const Footer = () => {
     return(
@@ -24,7 +25,7 @@ const Footer = () => {
                 <p className="footer__services__title"><strong>خدمات درمانیتو</strong></p>
                 <ul className="footer__services__items">
                     {footerPages.map((item,index) => 
-                        <li className="footer__services__items__item p2" key={index}><a className="footer__services__items__item__a p2" href={item.href}>{item.title} </a></li>)}
+                        <li className="footer__services__items__item p2" key={index}><Link className="footer__services__items__item__a p2" to={item.href}>{item.title} </Link></li>)}
                 </ul>
             </div>
 
@@ -32,7 +33,7 @@ const Footer = () => {
                 <p className="footer__pages__title"><strong>صفحات درمانیتو</strong></p>
                 <ul className="footer__pages__items">
                 {footerServices.map((item,index) => 
-                        <li className="footer__services__items__item p2" key={index}><a className="footer__services__items__item__a p2" href={item.href}>{item.title} </a></li>)}
+                        <li className="footer__services__items__item p2" key={index}><Link className="footer__services__items__item__a p2" to={item.href}>{item.title} </Link></li>)}
                 </ul>
             </div>
 
