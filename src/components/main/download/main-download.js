@@ -18,7 +18,8 @@ const MainDownload = () => {
         },
         validationSchema: Yup.object({
           phoneNumber: Yup.number()
-                   .typeError("شماره وارد شده صحیح نیست")})});
+                   .min(10000000, 'فرمت صحیح نیست.')
+                   .typeError("فقط از اعداد استفاده کنید")})});
     return(
         <div>
         <div className="mainDownloadContainer">
@@ -27,11 +28,12 @@ const MainDownload = () => {
                     <h2 className="mainDownload__info__title">دانلود اپلیکیشن درمانیتو</h2>
                     <p className="mainDownload__info__description">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
                     <div className="mainDownload__info__input">
-                            <button className="mainDownload__info__input__button" onClick={() => formik.errors.phoneNumber? null: setViewModal(true)}>بفرست</button>
+                            <button className="mainDownload__info__input__button" onClick={() => !formik.errors.phoneNumber && formik.values.phoneNumber !== ""? setViewModal(true): null}>بفرست</button>
                             <input type="text" placeholder="شماره همراه را وارد کنید 09127654321" className="mainDownload__info__input__input"
-                            name="phoneNumber" onChange={formik.handleChange} value={formik.values.phoneNumber}/>
+                            name="phoneNumber" onChange={formik.handleChange} value={formik.values.phoneNumber}
+                            onBlur={formik.handleBlur}/>
                     </div>
-                            <p className="inputError__message">{formik.errors.phoneNumber}</p>
+                            <p style={{ height: '2rem', color: 'red', fontSize: '14px'}}>{formik.errors.phoneNumber}</p>
                     <div className="mainDownload__icons">
                         <SibAppLogoButton
                         backgroundColor="#2361B5"/>

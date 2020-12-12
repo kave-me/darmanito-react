@@ -8,11 +8,12 @@ import * as Yup from 'yup';
 const MainRegister = () => {
     const formik = useFormik({
         initialValues: {
-            email: ""
+            phoneNumber: ""
         },
         validationSchema: Yup.object({
             phoneNumber: Yup.number()
-            .typeError("شماره وارد شده صحیح نیست")})});
+            .min(10000000, 'فرمت صحیح نیست.')
+            .typeError("فقط از اعداد استفاده کنید")})});
     const [viewModal, setViewModal] = useState(false);
     return(
         <div className="mainRegisterContainer">
@@ -26,8 +27,9 @@ const MainRegister = () => {
                          placeholder="شماره همراه را وارد کنید 09127654321"
                          value={formik.values.phoneNumber}
                          onChange={formik.handleChange}
+                         onBlur={formik.handleBlur}
                          name="phoneNumber"/>
-                        <button onClick={() => formik.errors.phoneNumber? null : setViewModal(true)} className="mainRegister__info__input__button">ثبت نام سریع</button>
+                        <button onClick={() => !formik.errors.phoneNumber && formik.values.phoneNumber !== ""?setViewModal(true): null} className="mainRegister__info__input__button">ثبت نام سریع</button>
                     </div>
                     <p className="inputError__message">{formik.errors.phoneNumber}</p>
 
