@@ -4,7 +4,8 @@ import SibAppLogoButton from '../../base/button/sibApp';
 import BazarLogoButton from '../../base/button/bazar';
 import AndroidLogoButton from '../../base/button/android';
 import MainDownloadModal from '../../base/modal/download-modal';
-import './main-download.scss';
+import styles from './main-download.module.scss';
+import cx from 'classnames';
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
 
@@ -22,19 +23,19 @@ const MainDownload = () => {
                    .typeError("فقط از اعداد استفاده کنید")})});
     return(
         <div>
-        <div className="mainDownloadContainer">
-            <div className="mainDownload">
-                <div className="mainDownload__info">
-                    <h2 className="mainDownload__info__title">دانلود اپلیکیشن درمانیتو</h2>
-                    <p className="mainDownload__info__description">برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
-                    <div className="mainDownload__info__input">
-                            <button className="mainDownload__info__input__button" onClick={() => !formik.errors.phoneNumber && formik.values.phoneNumber !== ""? setViewModal(true): null}>بفرست</button>
-                            <input type="text" placeholder="شماره همراه را وارد کنید 09127654321" className="mainDownload__info__input__input"
+        <div className={styles.mainDownloadContainer}>
+            <div className={styles.mainDownload}>
+                <div className={styles.mainDownload__info}>
+                    <h2 className={styles.mainDownload__info__title}>دانلود اپلیکیشن درمانیتو</h2>
+                    <p className={styles.mainDownload__info__description}>برای دریافت لینک دانلود، شماره موبایل خود را وارد کنید.</p>
+                    <div className={styles.mainDownload__info__input}>
+                            <button className={styles.mainDownload__info__input__button} onClick={() => !formik.errors.phoneNumber && formik.values.phoneNumber !== ""? setViewModal(true): null}>بفرست</button>
+                            <input type="text" placeholder="شماره همراه را وارد کنید 09127654321" className={styles.mainDownload__info__input__input}
                             name="phoneNumber" onChange={formik.handleChange} value={formik.values.phoneNumber}
                             onBlur={formik.handleBlur}/>
                     </div>
                             <p style={{ height: '2rem', color: 'red', fontSize: '14px'}}>{formik.errors.phoneNumber}</p>
-                    <div className="mainDownload__icons">
+                    <div className={styles.mainDownload__icons}>
                         <SibAppLogoButton
                         backgroundColor="#2361B5"/>
                         <BazarLogoButton
@@ -43,7 +44,7 @@ const MainDownload = () => {
                         backgroundColor="#2361B5"/>
                     </div>
                 </div>
-                <img className="mainDownload__img" src={mobileDemoPic} alt="mobile application"/>
+                <img className={styles.mainDownload__img} src={mobileDemoPic} alt="mobile application"/>
             </div>
         </div>
         {viewModal 
