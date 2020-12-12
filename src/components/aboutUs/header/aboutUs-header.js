@@ -1,24 +1,23 @@
 import React from 'react';
 import Card from './aboutUs-header-card';
-import './aboutUs-header.scss';
 import shortid from 'shortid';
-
-
+import styles from './aboutUs-header.module.scss';
+import cx from 'classnames';
 
 
 const Header = () => {
     return(
-        <div className="aboutUs__header section">
-            <div className="aboutUs__header__textAndInput">
-                <h1 className="aboutUs__header__textAndInput__title">شما هم در سلامت و بهبود مردم کشورمان موثر باشید.</h1>
-                <p className="aboutUs__header__textAndInput__description">با ثبت نام به عنوان داروخانه یا فروشگاه شما هم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارائه بدید همچنین روزانه درآمد حساب خودتان را تصویه کنید.</p>
-                <div className="aboutUs__header__textAndInput__input">
-                    <input className="aboutUs__header__textAndInput__input__input" type="text" placeholder="شماره همراه را وارد کنید: 09127654321"/>
-                    <button className="aboutUs__header__textAndInput__input__button">ثبت نام سریع</button>
+        <div className={cx(styles.aboutUs__header, styles.section)}>
+            <div className={styles.aboutUs__header__textAndInput}>
+                <h1 className={styles.aboutUs__header__textAndInput__title}>شما هم در سلامت و بهبود مردم کشورمان موثر باشید.</h1>
+                <p className={styles.aboutUs__header__textAndInput__description}>با ثبت نام به عنوان داروخانه یا فروشگاه شما هم به سیستم درمان کمک کنید و به هزاران کاربر خدمات ارائه بدید همچنین روزانه درآمد حساب خودتان را تصویه کنید.</p>
+                <div className={styles.aboutUs__header__textAndInput__input}>
+                    <input className={styles.aboutUs__header__textAndInput__input__input} type="text" placeholder="شماره همراه را وارد کنید: 09127654321"/>
+                    <button className={styles.aboutUs__header__textAndInput__input__button}>ثبت نام سریع</button>
                 </div>
             </div>
-            <div className="aboutUs__header__icons">
-                    <div className="aboutUs__header__icons__icon-1">
+            <div className={styles.aboutUs__header__icons}>
+                    <div className={styles.aboutUs__header__icons__icon__1}>
                         <Card
                             opacity={1}
                             width={100}
@@ -28,7 +27,7 @@ const Header = () => {
                             isBoarding={true}
                             key={shortid.generate()}/>
                         </div>
-                    <div className="aboutUs__header__icons__icon-2">
+                    <div className={styles.aboutUs__header__icons__icon__2}>
                         <Card
                             opacity={.6}
                             width={80}
@@ -38,7 +37,7 @@ const Header = () => {
                             isBoarding={true}
                             key={shortid.generate()}/>
                         </div>
-                    <div className="aboutUs__header__icons__icon-3">
+                    <div className={styles.aboutUs__header__icons__icon__3}>
                         <Card
                             opacity={.4}
                             width={75}

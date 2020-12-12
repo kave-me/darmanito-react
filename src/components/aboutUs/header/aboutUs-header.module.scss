@@ -1,4 +1,5 @@
 @import '../../../asset/sass/base/colors';
+@import '../../../asset/sass/base/_defaults';
 
 .aboutUs {
     &__header {
@@ -11,13 +12,13 @@
         &__icons {
             display: flex;
             flex-direction: column;
-            &__icon-1 {
+            &__icon__1 {
                 align-self: center;
             }
-            &__icon-2 {
+            &__icon__2 {
                 align-self: center;
             }
-            &__icon-3 {
+            &__icon__3 {
                 align-self: flex-start;
             }
         }
