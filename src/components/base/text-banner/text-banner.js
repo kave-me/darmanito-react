@@ -1,10 +1,11 @@
 import React from 'react';
-import './text-banner.scss';
+import styles from './text-banner.module.scss';
+import cx from 'classnames';
 
 const TextBanner = props => {
     return(
-        <div className="section textBanner">
-            <h2 className="textBanner__text">{props.text}</h2>
+        <div className={cx(styles.section, styles.textBanner)}>
+            <h2 className={styles.textBanner__text}>{props.text}</h2>
         </div>
     );
 }
