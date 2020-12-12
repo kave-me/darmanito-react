@@ -7,7 +7,8 @@ import schedulePic from '../../../asset/image/schedule.svg';
 import stethoscopePic from '../../../asset/image/stethoscope.svg';
 import arrowDownPic from '../../../asset/image/down-arrow.svg';
 import checkPic from '../../../asset/image/done-check.svg';
-import './main-features.scss';
+import styles from './main-features.module.scss';
+import cx from 'classnames';
 
 
 
@@ -63,10 +64,10 @@ const MainFeatures = () => {
         }))
     )
     return(
-        <div className="mainFeaturesContainer section">
-            <div className="mainFeatures">
-                <h2 className="mainFeatures__title">امکانات درمانیتو</h2>
-                <div className="mainFeatures__icons">
+        <div className={cx(styles.mainFeaturesContainer, styles.section)}>
+            <div className={styles.mainFeatures}>
+                <h2 className={styles.mainFeatures__title}>امکانات درمانیتو</h2>
+                <div className={styles.mainFeatures__icons}>
                     {features.map((item) => (
                         <MainFeaturesIcon
                         title={item.title}
@@ -76,39 +77,39 @@ const MainFeatures = () => {
                         key={item.id}/>
                     ))}
                 </div>
-                <div className="mainFeatures__info">
+                <div className={styles.mainFeatures__info}>
 
                     {features.filter((item)=> item.isActive === true).map((item) => {
                         return(
                             <div key={item.description}>
-                                <p className="mainFeatures__info__description">
+                                <p className={styles.mainFeatures__info__description}>
                                     {item.description}
                                 </p>
-                                <div className="mainFeatures__info__step1">
+                                <div className={styles.mainFeatures__info__step1}>
                                     <div>
-                                        <img className="mainFeatures__info__step1__img" src={arrowDownPic} alt="arrowDown"/>
-                                        <p className="mainFeatures__info__step1__title"><strong>قدم اول</strong></p>
+                                        <img className={styles.mainFeatures__info__step1__img} src={arrowDownPic} alt={styles.arrowDown}/>
+                                        <p className={styles.mainFeatures__info__step1__title}><strong>قدم اول</strong></p>
                                     </div>
-                                    <p className="mainFeatures__info__step1__description">{item.step1}</p>
+                                    <p className={styles.mainFeatures__info__step1__description}>{item.step1}</p>
                                 </div>
-                                <div className="mainFeatures__info__step2">
+                                <div className={styles.mainFeatures__info__step2}>
                                     <div>
-                                        <img className="mainFeatures__info__step2__img" src={arrowDownPic} alt="arrowDown"/>
-                                        <p className="mainFeatures__info__step2__title"><strong>قدم دوم</strong></p>
+                                        <img className={styles.mainFeatures__info__step2__img} src={arrowDownPic} alt={styles.arrowDown}/>
+                                        <p className={styles.mainFeatures__info__step2__title}><strong>قدم دوم</strong></p>
                                     </div>
-                                    <p className="mainFeatures__info__step2__description">{item.step2}</p>
+                                    <p className={styles.mainFeatures__info__step2__description}>{item.step2}</p>
                                 </div>
-                                <div className="mainFeatures__info__step3">
+                                <div className={styles.mainFeatures__info__step3}>
                                     <div>
-                                        <img className="mainFeatures__info__step3__img" src={checkPic} alt="check"/>
-                                        <p className="mainFeatures__info__step3__title"><strong>قدم سوم</strong></p>
+                                        <img className={styles.mainFeatures__info__step3__img} src={checkPic} alt={styles.check}/>
+                                        <p className={styles.mainFeatures__info__step3__title}><strong>قدم سوم</strong></p>
                                     </div>
-                                    <p className="mainFeatures__info__step3__description">{item.step3}</p>
+                                    <p className={styles.mainFeatures__info__step3__description}>{item.step3}</p>
                                 </div>
                             </div>
                         );
                     })}
-                    <p className="mainFeatures__info__title"><strong></strong></p>
+                    <p className={styles.mainFeatures__info__title}><strong></strong></p>
                 </div>
             </div>
         </div>
