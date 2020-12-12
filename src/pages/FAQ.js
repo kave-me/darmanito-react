@@ -1,6 +1,8 @@
 import React from "react";
 import style from './faq.module.scss';
-import ear from '../asset/image/pharmacy.svg';
+import pharmacy from '../asset/image/pharmacy.svg';
+import market from '../asset/image/market.svg';
+import schedule from '../asset/image/schedule.svg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -27,11 +29,11 @@ const FAQ = (props) =>{
 
         <div style={{display:"block", width:"95%", overflow:"none"}}>
                 <Slider {...settings} className={style.padding}>
-                <Card pic={ear} name="ویزیت آنلاین" />
-                <Card pic={ear} name="فروشگاه آنلاین" />
-                <Card pic={ear} name="داروخانه آنلاین" />
-                <Card pic={ear} name="ویزیت آنلاین" />
-                <Card pic={ear} name="ویزیت آنلاین" />
+                <Card pic={schedule} name="ویزیت آنلاین" />
+                <Card pic={market} name="فروشگاه آنلاین" />
+                <Card pic={pharmacy} name="داروخانه آنلاین" />
+                <Card pic={market} name="ویزیت آنلاین" />
+                <Card pic={schedule} name="ویزیت آنلاین" />
                 </Slider>
         </div>
 
