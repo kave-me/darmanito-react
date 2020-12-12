@@ -1,9 +1,6 @@
-import React, {useState} from "react";
+import React from "react";
 import style from './faq.module.scss';
 import ear from '../asset/image/pharmacy.svg';
-import market from '../asset/image/market.svg';
-import pharmacy from '../asset/image/pharmacy.svg';
-import schedule from '../asset/image/schedule.svg';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";

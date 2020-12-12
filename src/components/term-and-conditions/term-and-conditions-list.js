@@ -2,7 +2,8 @@ import React, {useState} from 'react';
 import TermAndConditionsIcon from './term-and-conditions-icon'
 import shortid from 'shortid';
 import {description1, description2, description3, description4} from './term-and-conditions-descriptions.js';
-import './term-and-conditions-list.scss';
+import styles from './term-and-conditions-list.module.scss';
+import cx from 'classnames';
 
 
 const TermAndConditionsList = () => {
@@ -44,9 +45,9 @@ const TermAndConditionsList = () => {
     }
 
     return (
-        <div className="TermAndConditionsListContainer section">
+        <div className={cx(styles.TermAndConditionsListContainer, styles.section)}>
 
-            <div className="TermAndConditionsList__icon">
+            <div className={styles.TermAndConditionsList__icon}>
             {terms.map((term, index) => {
                 return(
                     <div key={index}>
@@ -60,7 +61,7 @@ const TermAndConditionsList = () => {
             })}
             </div>
             {terms.map((term)=> term.isActive
-            ? <p className="TermAndConditionsList__description" key={shortid.generate()} >{term.description}</p>
+            ? <p className={styles.TermAndConditionsList__description} key={shortid.generate()} >{term.description}</p>
             : null)}
         </div>
     );

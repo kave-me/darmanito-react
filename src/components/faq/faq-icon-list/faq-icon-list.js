@@ -5,10 +5,10 @@ import marketIcon from '../../../asset/image/market.svg';
 import pharmacyIcon from '../../../asset/image/pharmacy.svg';
 import scheduleIcon from '../../../asset/image/schedule.svg';
 import stethoscopeIcon from '../../../asset/image/stethoscope.svg';
-import './faq-icon-list.scss';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Slider from 'react-slick';
+import styles from './faq-icon-list.module.scss';
 
 
 
@@ -58,7 +58,7 @@ const FaqIconList = () => {
         slidesToScroll: 1
       };
     return(
-        <div className="FaqIconListContainer">
+        <div className={styles.FaqIconListContainer}>
             <Slider {...settings}>
                 { iconsStat.map((item) => {
                         return(<FaqIcon
