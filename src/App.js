@@ -19,6 +19,7 @@ function App() {
       <Route exact path="/faq" component={FAQ}/>
       <Route exact path="/RegisterPharmacy" component={RegisterPharmacy}/>
       <Route exact path="/TermAndConditions" component={TermAndConditions}/>
+      <Route component={Main}/>
     </Switch>
     </div>
   );
