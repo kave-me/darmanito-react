@@ -56,7 +56,7 @@ const ContactUs = () => {
                         onChange={formik.handleChange}></textarea>
                         <p className="inputError__message">{formik.errors.message}</p>
 
-                        <button type="button" className="messageForm__form__button" onClick={() => setViewModal(true)}>ارسال پیام</button>
+                        <button type="button" className="messageForm__form__button" onClick={() => formik.isValid &&formik.values.emailAndPhone!== formik.initialValues.emailAndPhone ?setViewModal(true):null}>ارسال پیام</button>
                     </form>
                 </div>
                 <div className="contactUS__map"> 
