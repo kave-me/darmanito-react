@@ -7,6 +7,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "caniuse-lite": "^1.0.30001161",
+    "classnames": "^2.2.6",
     "formik": "^2.2.5",
     "leaflet": "^1.7.1",
     "node-sass": "4",

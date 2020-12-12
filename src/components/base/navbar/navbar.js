@@ -3,7 +3,8 @@ import navbarListItems from './NavbarNavigationItems';
 import Logo from "../logo";
 import {useLocation, NavLink} from 'react-router-dom';
 import MainDownloadModal from "../modal/download-modal/download-modal";
-import './navbar.scss';
+import styles from'./navbar.module.scss';
+import cx from 'classnames';
 
 const Navbar = () => {
   const [burger, setBurger] = useState({ isOpen: false });
@@ -21,25 +22,24 @@ const Navbar = () => {
       setLinks(newNavItems)}
   const [viewModal, setViewModal] = useState(false);
   return (
-    <nav className="section navbar">
+    <nav className={cx(styles.navbar, styles.section)}>
       <Logo />
       <div
         className={
           burger.isOpen
-            ? "navbar__content navbar__content__active"
-            : "navbar__content"
-        }
-      >
-        <ul className="navbar__items">
+            ? cx(styles.navbar__content, styles.navbar__content__active)
+            : styles.navbar__content
+        }>
+        <ul className={styles.navbar__items}>
           {links.map((item, index) => {
             return (
-              <li className="navbar__items__li" key={index}>
+              <li className={styles.navbar__items__li} key={index}>
                 <NavLink
                   exact={true}
                   to={item.href}
                   onClick={handleNavigation}
-                  activeClassName= "navbar__items__li__a__active"
-                  className= "navbar__items__li__a"
+                  activeClassName= {styles.navbar__items__li__a__active}
+                  className= {styles.navbar__items__li__a}
                   key={index}>
                   {item.title}
                 </NavLink>
@@ -48,22 +48,22 @@ const Navbar = () => {
           })}
         </ul>
 
-        <div className="navbar__buttonSeparator"></div>
-        <button className="navbar__button" onClick={() => setViewModal(true)}>دانلود درمانیتو</button>
+        <div className={styles.navbar__buttonSeparator}></div>
+        <button className={styles.navbar__button} onClick={() => setViewModal(true)}>دانلود درمانیتو</button>
       </div>
       <i
         className={
           !burger.isOpen
-            ? "navbar__hamburger__bars fa fa-bars"
-            : "navbar__hamburger__bars__disable fa fa-bars"
+            ? cx(styles.navbar__hamburger__bars, " fa fa-bars")
+            : cx(styles.navbar__hamburger__bars__disable, " fa fa-bars")
         }
         onClick={switchBurger}
       ></i>
       <i
         className={
           burger.isOpen
-            ? "navbar__hamburger__cross fa fa-times"
-            : "navbar__hamburger__cross__disable fa fa-times"
+            ? cx(styles.navbar__hamburger__cross, " fa fa-times")
+            : cx(styles.navbar__hamburger__cross__disable, " fa fa-times")
         }
         onClick={switchBurger}
       ></i>
