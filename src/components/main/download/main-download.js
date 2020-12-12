@@ -5,7 +5,6 @@ import BazarLogoButton from '../../base/button/bazar';
 import AndroidLogoButton from '../../base/button/android';
 import MainDownloadModal from '../../base/modal/download-modal';
 import styles from './main-download.module.scss';
-import cx from 'classnames';
 import {useFormik} from 'formik';
 import * as Yup from 'yup';
 
