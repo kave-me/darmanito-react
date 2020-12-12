@@ -1,12 +1,12 @@
 import React from 'react';
-import './progress-bar.scss';
+import styles from './progress-bar.module.scss';
 
 const ProgressBar = (props) => {
     return(
-        <div className="progressBarContainer">
-            <p className="progressBarContainer__label">{props.value}% درصد تکمیل شده است</p>
-            <div className="progressBarContainer__background">
-                <div className="progressBarContainer__progress"
+        <div className={styles.progressBarContainer}>
+            <p className={styles.progressBarContainer__label}>{props.value}% درصد تکمیل شده است</p>
+            <div className={styles.progressBarContainer__background}>
+                <div className={styles.progressBarContainer__progress}
                 style={{width:`${props.value}%`}}>
                 </div>
             </div>
