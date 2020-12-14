@@ -3,7 +3,6 @@ import Card from '../../../aboutUs/header/aboutUs-header-card';
 import shortid from 'shortid';
 import RegisterModal from '../../../base/modal/register-modal';
 import styles from './confirmation.module.scss';
-import cx from 'classnames';
 
 const Confirmation = (props) => {
     const [viewModal, setViewModal] = useState(false);
@@ -21,7 +20,7 @@ const Confirmation = (props) => {
                 <Card
                 width={80}
                 opacity={.6}
-                name= {props.formik.values.placeName}
+                name= {props.formik.values.place.Name}
                 address= {props.formik.values.fullAddress}
                 img= {props.formik.values.photo}
                 isBoarding= {props.formik.values.isBoarding}
