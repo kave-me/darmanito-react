@@ -9,6 +9,9 @@ import RegisterModal from '../components/base/modal/contactUs-modal';
 import styles from './contactUs.module.scss';
 import cx from 'classnames';
 
+const emailRegex = RegExp(/^\S{3,}@\S{2,}\.\S{2,}$/);
+const phoneRegex = RegExp(/^\d{5,10}$/);
+
 const ContactUs = () => {
     const formik = useFormik(
         {
@@ -23,6 +26,8 @@ const ContactUs = () => {
                     .required("فیلد اجباری"),
                 emailAndPhone:
                     Yup.string()
+                    .matches(`${emailRegex.source}|${phoneRegex.source}`,
+                        "فرمت صحیح نیست")
                     .required("فیلد اجباری"),
                 message:
                     Yup.string()
@@ -46,7 +51,7 @@ const ContactUs = () => {
                         <p className={styles.inputError__message}>{formik.errors.fullName}</p>
 
                         <label className={styles.messageForm__form__label} htmlFor="emailAndPhone">ایمیل یا شماره همراه</label>
-                        <input className={styles.messageForm__form__input} id="emailAndPhone" type="text" placeholder="ایمیل یا شماره همراه"
+                        <input className={cx(styles.messageForm__form__input, styles.ltr)} id="emailAndPhone" type="text" placeholder="ایمیل یا شماره همراه"
                         onChange={formik.handleChange} name="emailAndPhone"/>
                         <p className={styles.inputError__message}>{formik.errors.emailAndPhone}</p>
 
